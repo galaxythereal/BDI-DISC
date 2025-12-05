@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الحلقة 6: قراءة الغرفة | DISC Sales Mastery</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">
+                <span class="logo-icon">🎯</span>
+                <span class="logo-text">DISC<span class="logo-highlight">Sales</span></span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="../index.html" class="nav-link">الرئيسية</a></li>
+                <li><a href="../course.html" class="nav-link active">الكورس</a></li>
+                <li><a href="../resources.html" class="nav-link">الأدوات</a></li>
+                <li><a href="../implementation.html" class="nav-link">دليل التطبيق</a></li>
+                <li><a href="../about.html" class="nav-link">عن الكورس</a></li>
+                <li><a href="../quiz.html" class="nav-link nav-cta">اكتشف شخصيتك</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Episode Header -->
+    <section class="episode-header episode-header-mixed">
+        <div class="container">
+            <div class="episode-nav-breadcrumb">
+                <a href="../course.html">الكورس</a>
+                <span class="separator">/</span>
+                <span>الحلقة 6</span>
+            </div>
+            <div class="episode-header-content">
+                <div class="episode-badge">
+                    <span class="episode-num">الحلقة 06</span>
+                    <span class="episode-duration">⏱️ 10 دقائق</span>
+                </div>
+                <h1>قراءة الغرفة — تحديد أنماط DISC في دقيقتين</h1>
+                <p class="episode-subtitle-large">Reading the Room — Identifying DISC Types in 2 Minutes</p>
+                <div class="disc-types-mini">
+                    <span class="type-mini type-d">D</span>
+                    <span class="type-mini type-i">I</span>
+                    <span class="type-mini type-s">S</span>
+                    <span class="type-mini type-c">C</span>
+                </div>
+                <div class="episode-sape-indicators">
+                    <div class="sape-indicator" data-type="S">
+                        <span class="indicator-letter">S</span>
+                        <span class="indicator-text">أسئلة تبني علاقة وتجمع معلومات</span>
+                    </div>
+                    <div class="sape-indicator" data-type="A">
+                        <span class="indicator-letter">A</span>
+                        <span class="indicator-text">3 أسئلة تكشف الشخصية</span>
+                    </div>
+                    <div class="sape-indicator" data-type="P">
+                        <span class="indicator-letter">P</span>
+                        <span class="indicator-text">أمثلة مكالمات حية</span>
+                    </div>
+                    <div class="sape-indicator" data-type="E">
+                        <span class="indicator-letter">E</span>
+                        <span class="indicator-text">ثقة قراءة الناس</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Audio Player Section -->
+    <section class="audio-section">
+        <div class="container">
+            <div class="audio-player-card">
+                <div class="audio-visual">
+                    <div class="audio-artwork">
+                        <div class="artwork-bg artwork-bg-mixed"></div>
+                        <span class="artwork-number">06</span>
+                        <div class="sound-waves">
+                            <span class="wave"></span>
+                            <span class="wave"></span>
+                            <span class="wave"></span>
+                            <span class="wave"></span>
+                            <span class="wave"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="audio-controls">
+                    <div class="custom-audio-player">
+                        <button class="play-pause-btn" id="playPauseBtn" onclick="togglePlay()">
+                            <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M8 5v14l11-7z"/>
+                            </svg>
+                        </button>
+                        <div class="progress-container">
+                            <div class="time-display">
+                                <span id="currentTime">0:00</span>
+                                <span id="duration">10:00</span>
+                            </div>
+                            <div class="progress-bar" id="progressBar">
+                                <div class="progress-fill" id="progressFill"></div>
+                            </div>
+                        </div>
+                        <button class="speed-btn" onclick="changeSpeed()">
+                            <span id="speedDisplay">1x</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Episode Content -->
+    <section class="episode-content-section">
+        <div class="container">
+            <div class="content-grid">
+                <div class="main-content">
+                    <!-- Key Takeaways -->
+                    <div class="content-card takeaways-card">
+                        <div class="card-header">
+                            <span class="card-icon">🎯</span>
+                            <h3>النقاط الرئيسية</h3>
+                        </div>
+                        <div class="card-body">
+                            <ul class="takeaways-list">
+                                <li>
+                                    <span class="takeaway-icon">✓</span>
+                                    <span>يمكنك تحديد نمط DISC في أول دقيقتين من خلال 3 أسئلة ذكية</span>
+                                </li>
+                                <li>
+                                    <span class="takeaway-icon">✓</span>
+                                    <span>راقب: سرعة الكلام، نوع الأسئلة، لغة الجسد، نبرة الصوت</span>
+                                </li>
+                                <li>
+                                    <span class="takeaway-icon">✓</span>
+                                    <span>الأسئلة الذكية تبني علاقة وتجمع معلومات في نفس الوقت</span>
+                                </li>
+                                <li>
+                                    <span class="takeaway-icon">✓</span>
+                                    <span>لا تحتاج للتأكد 100% - تقدير أولي 70% كافي للبدء</span>
+                                </li>
+                                <li>
+                                    <span class="takeaway-icon">✓</span>
+                                    <span>كلما تدربت أكثر، أصبحت القراءة أسرع وأدق</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- 3 Questions Framework -->
+                    <div class="content-card framework-card">
+                        <div class="card-header">
+                            <span class="card-icon">🔍</span>
+                            <h3>الـ 3 أسئلة الكاشفة</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="framework-intro">
+                                <p>هذه الأسئلة تبدو طبيعية لكنها تكشف نمط الشخصية من خلال طريقة الإجابة:</p>
+                            </div>
+                            <div class="questions-framework">
+                                <div class="question-item">
+                                    <div class="question-number">1</div>
+                                    <div class="question-content">
+                                        <h4>"ما أهم شيء تبحث عنه في [المنتج/الخدمة]؟"</h4>
+                                        <div class="question-responses">
+                                            <div class="response response-d">
+                                                <span class="response-type">D</span>
+                                                <span>"النتائج السريعة" / "التوفير" / "الكفاءة"</span>
+                                            </div>
+                                            <div class="response response-i">
+                                                <span class="response-type">I</span>
+                                                <span>"تجربة الآخرين" / "سهولة الاستخدام" / يحكي قصة</span>
+                                            </div>
+                                            <div class="response response-s">
+                                                <span class="response-type">S</span>
+                                                <span>"الموثوقية" / "الدعم" / "الاستمرارية"</span>
+                                            </div>
+                                            <div class="response response-c">
+                                                <span class="response-type">C</span>
+                                                <span>"الجودة" / "المواصفات" / يسأل أسئلة تفصيلية</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="question-item">
+                                    <div class="question-number">2</div>
+                                    <div class="question-content">
+                                        <h4>"كيف تفضل أن نكمل من هنا؟"</h4>
+                                        <div class="question-responses">
+                                            <div class="response response-d">
+                                                <span class="response-type">D</span>
+                                                <span>"خلّص الموضوع" / "أعطني الخلاصة"</span>
+                                            </div>
+                                            <div class="response response-i">
+                                                <span class="response-type">I</span>
+                                                <span>"نتكلم أكثر" / "عرّفني على الفريق"</span>
+                                            </div>
+                                            <div class="response response-s">
+                                                <span class="response-type">S</span>
+                                                <span>"محتاج وقت أفكر" / "أستشير الفريق"</span>
+                                            </div>
+                                            <div class="response response-c">
+                                                <span class="response-type">C</span>
+                                                <span>"أرسل لي التفاصيل" / "عندي أسئلة أخرى"</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="question-item">
+                                    <div class="question-number">3</div>
+                                    <div class="question-content">
+                                        <h4>"ما أكبر تحدي تواجهه حالياً؟"</h4>
+                                        <div class="question-responses">
+                                            <div class="response response-d">
+                                                <span class="response-type">D</span>
+                                                <span>إجابة مباشرة وقصيرة، يركز على النتائج</span>
+                                            </div>
+                                            <div class="response response-i">
+                                                <span class="response-type">I</span>
+                                                <span>يحكي قصة طويلة، يذكر أشخاص، متحمس</span>
+                                            </div>
+                                            <div class="response response-s">
+                                                <span class="response-type">S</span>
+                                                <span>يتحدث بتأني، يذكر الفريق، يعبر عن قلق</span>
+                                            </div>
+                                            <div class="response response-c">
+                                                <span class="response-type">C</span>
+                                                <span>يعطي تفاصيل كثيرة، يذكر أرقام، منظم</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Quick Identification Guide -->
+                    <div class="content-card identification-card">
+                        <div class="card-header">
+                            <span class="card-icon">⚡</span>
+                            <h3>دليل التعرف السريع</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="identification-grid">
+                                <div class="id-column">
+                                    <h4>🔊 استمع لـ:</h4>
+                                    <ul>
+                                        <li><strong>سرعة الكلام:</strong> D سريع، S بطيء</li>
+                                        <li><strong>نبرة الصوت:</strong> I متحمس، C هادئ ومنطقي</li>
+                                        <li><strong>نوع الأسئلة:</strong> D "متى؟"، C "كيف بالتفصيل؟"</li>
+                                        <li><strong>طول الإجابات:</strong> D قصيرة، I طويلة</li>
+                                    </ul>
+                                </div>
+                                <div class="id-column">
+                                    <h4>👀 راقب:</h4>
+                                    <ul>
+                                        <li><strong>لغة الجسد:</strong> D واثق، S مسترخي</li>
+                                        <li><strong>التواصل البصري:</strong> D مباشر، S أقل</li>
+                                        <li><strong>الإيماءات:</strong> I كثيرة، C قليلة</li>
+                                        <li><strong>المكتب/البيئة:</strong> C منظم، I صور وجوائز</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Quick Action -->
+                    <div class="content-card action-card">
+                        <div class="card-header">
+                            <span class="card-icon">🎯</span>
+                            <h3>التطبيق العملي</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="action-item">
+                                <h4>تمرين الاستماع:</h4>
+                                <div class="action-task">
+                                    <span class="task-number">1</span>
+                                    <div class="task-content">
+                                        <p>في مكالماتك الـ 5 القادمة، حاول تحديد نمط العميل في أول دقيقتين</p>
+                                    </div>
+                                </div>
+                                <div class="action-task">
+                                    <span class="task-number">2</span>
+                                    <div class="task-content">
+                                        <p>سجّل ملاحظاتك: ما العلامات التي لاحظتها؟ هل كان تقديرك صحيحاً؟</p>
+                                    </div>
+                                </div>
+                                <div class="action-task">
+                                    <span class="task-number">3</span>
+                                    <div class="task-content">
+                                        <p>استخدم الـ 3 أسئلة الكاشفة وراقب ردود الفعل</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Reflection -->
+                    <div class="content-card reflection-card">
+                        <div class="card-header">
+                            <span class="card-icon">💭</span>
+                            <h3>سؤال للتأمل</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="reflection-question">
+                                <p>"تخيل أنك تستطيع قراءة أي شخص في دقيقتين... كيف ستتغير ثقتك في المحادثات؟ وكيف سيتغير أداؤك في المبيعات؟"</p>
+                            </div>
+                            <div class="reflection-space">
+                                <textarea placeholder="اكتب أفكارك هنا..." rows="4"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sidebar -->
+                <div class="sidebar">
+                    <div class="sidebar-card episode-nav-card">
+                        <h4>التنقل بين الحلقات</h4>
+                        <div class="episode-nav-buttons">
+                            <a href="episode5.html" class="nav-btn">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9 18l6-6-6-6"/>
+                                </svg>
+                                <span>الحلقة السابقة</span>
+                            </a>
+                            <a href="episode7.html" class="nav-btn">
+                                <span>الحلقة التالية</span>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M15 18l-6-6 6-6"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-card resources-card">
+                        <h4>📥 موارد هذه الحلقة</h4>
+                        <ul class="resources-list">
+                            <li>
+                                <a href="../downloads/quick-id-guide.pdf" class="resource-link">
+                                    <span class="resource-icon">📄</span>
+                                    <span class="resource-name">دليل التعرف السريع</span>
+                                    <span class="resource-type">PDF</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../downloads/3-questions-card.pdf" class="resource-link">
+                                    <span class="resource-icon">🔍</span>
+                                    <span class="resource-name">بطاقة الـ 3 أسئلة</span>
+                                    <span class="resource-type">PDF</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="sidebar-card progress-card">
+                        <h4>📊 تقدمك في الكورس</h4>
+                        <div class="progress-info">
+                            <div class="progress-bar-mini">
+                                <div class="progress-fill-mini" style="width: 60%"></div>
+                            </div>
+                            <span class="progress-text">6 من 10 حلقات</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Episode Navigation Footer -->
+    <section class="episode-footer-nav">
+        <div class="container">
+            <div class="footer-nav-content">
+                <a href="episode5.html" class="prev-episode">
+                    <span class="nav-label">الحلقة السابقة</span>
+                    <span class="nav-title">إقناع الـ C</span>
+                </a>
+                <a href="../course.html" class="all-episodes-btn">
+                    <span>📚</span>
+                    <span>كل الحلقات</span>
+                </a>
+                <a href="episode7.html" class="next-episode">
+                    <span class="nav-label">الحلقة التالية</span>
+                    <span class="nav-title">مرونة الأسلوب</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>© 2024 DISC Sales Mastery. مصمم بـ ❤️ للـ Learning & Development Team</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
