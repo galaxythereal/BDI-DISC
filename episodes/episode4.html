@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الحلقة 4: كسب ثقة الـ S | DISC Sales Mastery</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">
+                <span class="logo-icon">🎯</span>
+                <span class="logo-text">DISC<span class="logo-highlight">Sales</span></span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="../index.html" class="nav-link">الرئيسية</a></li>
+                <li><a href="../course.html" class="nav-link active">الكورس</a></li>
+                <li><a href="../resources.html" class="nav-link">الأدوات</a></li>
+                <li><a href="../implementation.html" class="nav-link">دليل التطبيق</a></li>
+                <li><a href="../about.html" class="nav-link">عن الكورس</a></li>
+                <li><a href="../quiz.html" class="nav-link nav-cta">اكتشف شخصيتك</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Episode Header -->
+    <section class="episode-header episode-header-s">
+        <div class="container">
+            <div class="episode-nav-breadcrumb">
+                <a href="../course.html">الكورس</a>
+                <span class="separator">/</span>
+                <span>الحلقة 4</span>
+            </div>
+            <div class="episode-header-content">
+                <div class="episode-badge">
+                    <span class="episode-num">الحلقة 04</span>
+                    <span class="episode-duration">⏱️ 10 دقائق</span>
+                </div>
+                <h1>كسب ثقة الـ S — البيع للداعم الثابت</h1>
+                <p class="episode-subtitle-large">Earning Trust with S — Selling to the Steady Supporter</p>
+                <div class="disc-type-badge disc-s-badge">
+                    <span class="type-letter">S</span>
+                    <span class="type-name">Steadiness</span>
+                </div>
+                <div class="episode-sape-indicators">
+                    <div class="sape-indicator" data-type="S">
+                        <span class="indicator-letter">S</span>
+                        <span class="indicator-text">العلاقة طويلة المدى</span>
+                    </div>
+                    <div class="sape-indicator" data-type="A">
+                        <span class="indicator-letter">A</span>
+                        <span class="indicator-text">6 علامات لتحديد الـ S</span>
+                    </div>
+                    <div class="sape-indicator" data-type="P">
+                        <span class="indicator-letter">P</span>
+                        <span class="indicator-text">خسارة عميل S بالاستعجال</span>
+                    </div>
+                    <div class="sape-indicator" data-type="E">
+                        <span class="indicator-letter">E</span>
+                        <span class="indicator-text">قيمة الأمان والولاء</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Audio Player Section -->
+    <section class="audio-section">
+        <div class="container">
+            <div class="audio-player-card audio-card-s">
+                <div class="audio-visual">
+                    <div class="audio-artwork">
+                        <div class="artwork-bg artwork-bg-s"></div>
+                        <span class="artwork-number">04</span>
+                        <div class="sound-waves">
+                            <span class="wave"></span>
+                            <span class="wave"></span>
+                            <span class="wave"></span>
+                            <span class="wave"></span>
+                            <span class="wave"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="audio-controls">
+                    <div class="audio-player-wrapper">
+                        <audio id="episode-audio" preload="metadata">
+                            <source src="../assets/audio/episode4.mp3" type="audio/mpeg">
+                        </audio>
+                        <div class="custom-audio-player">
+                            <button class="play-pause-btn" id="playPauseBtn" onclick="togglePlay()">
+                                <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M8 5v14l11-7z"/>
+                                </svg>
+                                <svg class="pause-icon hidden" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>
+                                </svg>
+                            </button>
+                            <div class="progress-container">
+                                <div class="time-display">
+                                    <span id="currentTime">0:00</span>
+                                    <span id="duration">10:00</span>
+                                </div>
+                                <div class="progress-bar" id="progressBar">
+                                    <div class="progress-fill" id="progressFill"></div>
+                                </div>
+                            </div>
+                            <button class="speed-btn" onclick="changeSpeed()">
+                                <span id="speedDisplay">1x</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Episode Content -->
+    <section class="episode-content-section">
+        <div class="container">
+            <div class="content-grid">
+                <div class="main-content">
+                    <!-- Key Takeaways -->
+                    <div class="content-card takeaways-card">
+                        <div class="card-header">
+                            <span class="card-icon">🎯</span>
+                            <h3>النقاط الرئيسية</h3>
+                        </div>
+                        <div class="card-body">
+                            <ul class="takeaways-list">
+                                <li>
+                                    <span class="takeaway-icon">✓</span>
+                                    <span>شخصية S هي الشخصية الهادئة: صبورة، وفية، تحب الاستقرار والأمان</span>
+                                </li>
+                                <li>
+                                    <span class="takeaway-icon">✓</span>
+                                    <span>الـ 6 علامات: هادئ الصوت، يستمع أكثر، يسأل عن التفاصيل الأمنية، يحتاج وقت، يذكر الفريق، يكره المفاجآت</span>
+                                </li>
+                                <li>
+                                    <span class="takeaway-icon">✓</span>
+                                    <span>أكبر خطأ: الاستعجال والضغط - S يحتاج وقت للتفكير والاطمئنان</span>
+                                </li>
+                                <li>
+                                    <span class="takeaway-icon">✓</span>
+                                    <span>مفتاح النجاح: الصبر + بناء الثقة + الطمأنة + احترام وتيرته</span>
+                                </li>
+                                <li>
+                                    <span class="takeaway-icon">✓</span>
+                                    <span>المكافأة: عميل S الراضي يصبح عميل وفي للأبد ويرشحك للآخرين</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- S Profile Card -->
+                    <div class="content-card profile-card profile-card-s">
+                        <div class="card-header">
+                            <span class="card-icon">👤</span>
+                            <h3>ملف شخصية الـ S</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="profile-grid">
+                                <div class="profile-section">
+                                    <h4>✅ ما يحبه</h4>
+                                    <ul>
+                                        <li>الاستقرار والأمان</li>
+                                        <li>العلاقات طويلة المدى</li>
+                                        <li>الوضوح والشفافية</li>
+                                        <li>الدعم المستمر</li>
+                                        <li>التغيير التدريجي</li>
+                                    </ul>
+                                </div>
+                                <div class="profile-section">
+                                    <h4>❌ ما يكرهه</h4>
+                                    <ul>
+                                        <li>الضغط والاستعجال</li>
+                                        <li>التغيير المفاجئ</li>
+                                        <li>المخاطر العالية</li>
+                                        <li>الصراعات والمواجهات</li>
+                                        <li>عدم اليقين</li>
+                                    </ul>
+                                </div>
+                                <div class="profile-section">
+                                    <h4>🗣️ طريقة كلامه</h4>
+                                    <ul>
+                                        <li>"محتاج أفكر شوية"</li>
+                                        <li>"ما رأي الفريق؟"</li>
+                                        <li>"هل هذا آمن؟"</li>
+                                        <li>"من زمان ونحن مع..."</li>
+                                        <li>"مش متأكد من التغيير"</li>
+                                    </ul>
+                                </div>
+                                <div class="profile-section">
+                                    <h4>🎯 كيف تبيع له</h4>
+                                    <ul>
+                                        <li>خذ وقتك، لا تستعجل</li>
+                                        <li>طمّنه على كل خطوة</li>
+                                        <li>أظهر الدعم المستمر</li>
+                                        <li>قدّم ضمانات وتجارب</li>
+                                        <li>تحدث عن الاستقرار</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Case Study -->
+                    <div class="content-card case-study-card">
+                        <div class="card-header">
+                            <span class="card-icon">📋</span>
+                            <h3>دراسة حالة: كيف خسرنا عميل S</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="case-study">
+                                <div class="case-scenario">
+                                    <h4>السيناريو:</h4>
+                                    <p>عميل اسمه محمود، مدير مشتريات منذ 15 سنة. كان يستخدم نفس المورد منذ 8 سنوات. جاءه salesperson متحمس وعرض عليه صفقة "لمدة محدودة" مع خصم كبير.</p>
+                                </div>
+                                <div class="case-mistake">
+                                    <h4>❌ الخطأ:</h4>
+                                    <p>الـ salesperson ضغط على محمود لاتخاذ قرار سريع: "العرض ينتهي غداً!" - محمود شعر بعدم الارتياح ورفض.</p>
+                                </div>
+                                <div class="case-solution">
+                                    <h4>✅ الحل الصحيح:</h4>
+                                    <p>"محمود، أفهم إنك مع المورد الحالي من زمان وده شيء ممتاز. خذ وقتك، وأنا هنا لأي سؤال. ممكن نعمل تجربة صغيرة من غير أي التزام؟"</p>
+                                </div>
+                                <div class="case-lesson">
+                                    <h4>💡 الدرس:</h4>
+                                    <p>S يحتاج وقت + طمأنة + تغيير تدريجي. الضغط = الخسارة المؤكدة.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Quick Action -->
+                    <div class="content-card action-card">
+                        <div class="card-header">
+                            <span class="card-icon">⚡</span>
+                            <h3>التطبيق العملي</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="action-item">
+                                <h4>قبل الحلقة القادمة، طبّق الآتي:</h4>
+                                <div class="action-task">
+                                    <span class="task-number">1</span>
+                                    <div class="task-content">
+                                        <p>جهّز 3 جمل طمأنة يمكنك استخدامها مع عملاء S:</p>
+                                        <ul>
+                                            <li>"خذ وقتك، أنا هنا لأي سؤال"</li>
+                                            <li>"سنكون معك في كل خطوة"</li>
+                                            <li>"يمكنك التجربة أولاً بدون التزام"</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="action-task">
+                                    <span class="task-number">2</span>
+                                    <div class="task-content">
+                                        <p>راجع آخر عميل "هادئ" تعاملت معه - هل استعجلت عليه؟ ماذا كنت ستفعل بشكل مختلف؟</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Reflection -->
+                    <div class="content-card reflection-card">
+                        <div class="card-header">
+                            <span class="card-icon">💭</span>
+                            <h3>سؤال للتأمل</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="reflection-question">
+                                <p>"فكّر في علاقة طويلة المدى مع عميل وفي... كيف بنيت هذه الثقة؟ وكيف يمكنك تكرار هذا مع كل عميل من نوع S؟"</p>
+                            </div>
+                            <div class="reflection-space">
+                                <textarea placeholder="اكتب أفكارك هنا..." rows="4"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sidebar -->
+                <div class="sidebar">
+                    <div class="sidebar-card episode-nav-card">
+                        <h4>التنقل بين الحلقات</h4>
+                        <div class="episode-nav-buttons">
+                            <a href="episode3.html" class="nav-btn">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9 18l6-6-6-6"/>
+                                </svg>
+                                <span>الحلقة السابقة</span>
+                            </a>
+                            <a href="episode5.html" class="nav-btn">
+                                <span>الحلقة التالية</span>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M15 18l-6-6 6-6"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-card resources-card">
+                        <h4>📥 موارد هذه الحلقة</h4>
+                        <ul class="resources-list">
+                            <li>
+                                <a href="../downloads/s-type-cheatsheet.pdf" class="resource-link">
+                                    <span class="resource-icon">📄</span>
+                                    <span class="resource-name">ورقة الغش لشخصية S</span>
+                                    <span class="resource-type">PDF</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../downloads/trust-building-guide.pdf" class="resource-link">
+                                    <span class="resource-icon">🤝</span>
+                                    <span class="resource-name">دليل بناء الثقة</span>
+                                    <span class="resource-type">PDF</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="sidebar-card progress-card">
+                        <h4>📊 تقدمك في الكورس</h4>
+                        <div class="progress-info">
+                            <div class="progress-bar-mini">
+                                <div class="progress-fill-mini" style="width: 40%"></div>
+                            </div>
+                            <span class="progress-text">4 من 10 حلقات</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Episode Navigation Footer -->
+    <section class="episode-footer-nav">
+        <div class="container">
+            <div class="footer-nav-content">
+                <a href="episode3.html" class="prev-episode">
+                    <span class="nav-label">الحلقة السابقة</span>
+                    <span class="nav-title">كسب الـ I</span>
+                </a>
+                <a href="../course.html" class="all-episodes-btn">
+                    <span>📚</span>
+                    <span>كل الحلقات</span>
+                </a>
+                <a href="episode5.html" class="next-episode">
+                    <span class="nav-label">الحلقة التالية</span>
+                    <span class="nav-title">إقناع الـ C</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>© 2024 DISC Sales Mastery. مصمم بـ ❤️ للـ Learning & Development Team</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
