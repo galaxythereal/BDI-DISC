@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الحلقة 10: خطة الـ 30 يوم | DISC Sales Mastery</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">
+                <span class="logo-icon">🎯</span>
+                <span class="logo-text">DISC<span class="logo-highlight">Sales</span></span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="../index.html" class="nav-link">الرئيسية</a></li>
+                <li><a href="../course.html" class="nav-link active">الكورس</a></li>
+                <li><a href="../resources.html" class="nav-link">الأدوات</a></li>
+                <li><a href="../implementation.html" class="nav-link">دليل التطبيق</a></li>
+                <li><a href="../about.html" class="nav-link">عن الكورس</a></li>
+                <li><a href="../quiz.html" class="nav-link nav-cta">اكتشف شخصيتك</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Episode Header - Special Final Episode -->
+    <section class="episode-header episode-header-final">
+        <div class="confetti-bg"></div>
+        <div class="container">
+            <div class="episode-nav-breadcrumb">
+                <a href="../course.html">الكورس</a>
+                <span class="separator">/</span>
+                <span>الحلقة 10</span>
+            </div>
+            <div class="episode-header-content">
+                <div class="episode-badge final-badge">
+                    <span class="badge-icon">🏆</span>
+                    <span class="episode-num">الحلقة الختامية</span>
+                    <span class="episode-duration">⏱️ 9 دقائق</span>
+                </div>
+                <h1>أن تصبح DISC Sales Master — خطة الـ 30 يوم</h1>
+                <p class="episode-subtitle-large">Becoming a DISC Sales Master — Your 30-Day Practice Plan</p>
+                <div class="episode-sape-indicators">
+                    <div class="sape-indicator" data-type="S">
+                        <span class="indicator-letter">S</span>
+                        <span class="indicator-text">نظام محاسبة الأقران</span>
+                    </div>
+                    <div class="sape-indicator" data-type="A">
+                        <span class="indicator-letter">A</span>
+                        <span class="indicator-text">تقويم الـ 30 يوم</span>
+                    </div>
+                    <div class="sape-indicator" data-type="P">
+                        <span class="indicator-letter">P</span>
+                        <span class="indicator-text">تحديات واقعية بالنقاط</span>
+                    </div>
+                    <div class="sape-indicator" data-type="E">
+                        <span class="indicator-letter">E</span>
+                        <span class="indicator-text">الاحتفال بالإنجاز</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Celebration Section -->
+    <section class="celebration-section">
+        <div class="container">
+            <div class="celebration-content">
+                <div class="celebration-icon">🎉</div>
+                <h2>تهانينا! أنت على وشك الانتهاء!</h2>
+                <p>قطعت رحلة رائعة من التعلم. الآن حان وقت التطبيق والإتقان.</p>
+                <div class="achievement-badges">
+                    <div class="achievement">
+                        <span class="achievement-icon">📚</span>
+                        <span class="achievement-text">تعلمت 4 أنماط</span>
+                    </div>
+                    <div class="achievement">
+                        <span class="achievement-icon">🔍</span>
+                        <span class="achievement-text">تحديد في دقيقتين</span>
+                    </div>
+                    <div class="achievement">
+                        <span class="achievement-icon">🛡️</span>
+                        <span class="achievement-text">16 رد على الاعتراضات</span>
+                    </div>
+                    <div class="achievement">
+                        <span class="achievement-icon">🤝</span>
+                        <span class="achievement-text">4 تقنيات إغلاق</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Audio Player Section -->
+    <section class="audio-section">
+        <div class="container">
+            <div class="audio-player-card audio-card-final">
+                <div class="audio-visual">
+                    <div class="audio-artwork artwork-final">
+                        <div class="artwork-bg artwork-bg-final"></div>
+                        <span class="artwork-number">10</span>
+                        <span class="artwork-trophy">🏆</span>
+                        <div class="sound-waves">
+                            <span class="wave"></span>
+                            <span class="wave"></span>
+                            <span class="wave"></span>
+                            <span class="wave"></span>
+                            <span class="wave"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="audio-controls">
+                    <div class="custom-audio-player">
+                        <button class="play-pause-btn" id="playPauseBtn" onclick="togglePlay()">
+                            <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M8 5v14l11-7z"/>
+                            </svg>
+                        </button>
+                        <div class="progress-container">
+                            <div class="time-display">
+                                <span id="currentTime">0:00</span>
+                                <span id="duration">9:00</span>
+                            </div>
+                            <div class="progress-bar" id="progressBar">
+                                <div class="progress-fill" id="progressFill"></div>
+                            </div>
+                        </div>
+                        <button class="speed-btn" onclick="changeSpeed()">
+                            <span id="speedDisplay">1x</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Episode Content -->
+    <section class="episode-content-section">
+        <div class="container">
+            <div class="content-grid">
+                <div class="main-content">
+                    <!-- Key Takeaways -->
+                    <div class="content-card takeaways-card">
+                        <div class="card-header">
+                            <span class="card-icon">🎯</span>
+                            <h3>النقاط الرئيسية</h3>
+                        </div>
+                        <div class="card-body">
+                            <ul class="takeaways-list">
+                                <li>
+                                    <span class="takeaway-icon">✓</span>
+                                    <span>المعرفة بدون تطبيق لا قيمة لها - التطبيق المستمر هو المفتاح</span>
+                                </li>
+                                <li>
+                                    <span class="takeaway-icon">✓</span>
+                                    <span>خطة الـ 30 يوم مصممة لتحويل المعرفة إلى عادات</span>
+                                </li>
+                                <li>
+                                    <span class="takeaway-icon">✓</span>
+                                    <span>نظام محاسبة الأقران يضاعف احتمالية الالتزام</span>
+                                </li>
+                                <li>
+                                    <span class="takeaway-icon">✓</span>
+                                    <span>التحسين المستمر: 1% أفضل كل يوم = 37x أفضل في سنة</span>
+                                </li>
+                                <li>
+                                    <span class="takeaway-icon">✓</span>
+                                    <span>احتفل بالإنجازات الصغيرة للحفاظ على الحماس</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- 30 Day Calendar -->
+                    <div class="content-card calendar-card">
+                        <div class="card-header">
+                            <span class="card-icon">📅</span>
+                            <h3>خطة الـ 30 يوم للتطبيق</h3>
+                        </div>
+                        <div class="card-body">
+                            <!-- Week 1 -->
+                            <div class="week-block">
+                                <div class="week-header">
+                                    <span class="week-number">الأسبوع 1</span>
+                                    <span class="week-theme">التعرف والملاحظة</span>
+                                </div>
+                                <div class="week-days">
+                                    <div class="day-item">
+                                        <span class="day-num">1-2</span>
+                                        <div class="day-task">
+                                            <h5>راجع ملفات الأنماط الأربعة</h5>
+                                            <p>اقرأ ورقة الغش لكل نمط مرة واحدة على الأقل</p>
+                                        </div>
+                                    </div>
+                                    <div class="day-item">
+                                        <span class="day-num">3-4</span>
+                                        <div class="day-task">
+                                            <h5>لاحظ 5 أشخاص</h5>
+                                            <p>في حياتك اليومية، حاول تحديد نمط 5 أشخاص (زملاء، أصدقاء، عائلة)</p>
+                                        </div>
+                                    </div>
+                                    <div class="day-item">
+                                        <span class="day-num">5-7</span>
+                                        <div class="day-task">
+                                            <h5>طبّق الـ 3 أسئلة الكاشفة</h5>
+                                            <p>في كل محادثة مع عميل، استخدم الأسئلة الثلاثة</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Week 2 -->
+                            <div class="week-block">
+                                <div class="week-header">
+                                    <span class="week-number">الأسبوع 2</span>
+                                    <span class="week-theme">التكيف الأساسي</span>
+                                </div>
+                                <div class="week-days">
+                                    <div class="day-item">
+                                        <span class="day-num">8-9</span>
+                                        <div class="day-task">
+                                            <h5>تكيّف مع نمط D</h5>
+                                            <p>في أي محادثة مع D، طبّق: مباشرة + نتائج + سرعة</p>
+                                        </div>
+                                    </div>
+                                    <div class="day-item">
+                                        <span class="day-num">10-11</span>
+                                        <div class="day-task">
+                                            <h5>تكيّف مع نمط I</h5>
+                                            <p>مع I: قصص + حماس + علاقة شخصية</p>
+                                        </div>
+                                    </div>
+                                    <div class="day-item">
+                                        <span class="day-num">12-13</span>
+                                        <div class="day-task">
+                                            <h5>تكيّف مع نمط S</h5>
+                                            <p>مع S: صبر + طمأنة + بدون ضغط</p>
+                                        </div>
+                                    </div>
+                                    <div class="day-item">
+                                        <span class="day-num">14</span>
+                                        <div class="day-task">
+                                            <h5>تكيّف مع نمط C</h5>
+                                            <p>مع C: بيانات + دقة + تفاصيل</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Week 3 -->
+                            <div class="week-block">
+                                <div class="week-header">
+                                    <span class="week-number">الأسبوع 3</span>
+                                    <span class="week-theme">الاعتراضات والإغلاق</span>
+                                </div>
+                                <div class="week-days">
+                                    <div class="day-item">
+                                        <span class="day-num">15-17</span>
+                                        <div class="day-task">
+                                            <h5>تدرب على الاعتراضات</h5>
+                                            <p>Role-play يومي مع زميل: اعتراض واحد × 4 أنماط</p>
+                                        </div>
+                                    </div>
+                                    <div class="day-item">
+                                        <span class="day-num">18-20</span>
+                                        <div class="day-task">
+                                            <h5>تدرب على الإغلاق</h5>
+                                            <p>استخدم تقنية الإغلاق المناسبة حسب النمط في كل صفقة</p>
+                                        </div>
+                                    </div>
+                                    <div class="day-item">
+                                        <span class="day-num">21</span>
+                                        <div class="day-task">
+                                            <h5>مراجعة منتصف الطريق</h5>
+                                            <p>راجع ملاحظاتك، ما الذي يعمل؟ ما الذي يحتاج تحسين؟</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Week 4 -->
+                            <div class="week-block">
+                                <div class="week-header">
+                                    <span class="week-number">الأسبوع 4</span>
+                                    <span class="week-theme">الإتقان والتكامل</span>
+                                </div>
+                                <div class="week-days">
+                                    <div class="day-item">
+                                        <span class="day-num">22-25</span>
+                                        <div class="day-task">
+                                            <h5>التكامل الكامل</h5>
+                                            <p>طبّق الدورة الكاملة: تحديد → تكيف → اعتراضات → إغلاق</p>
+                                        </div>
+                                    </div>
+                                    <div class="day-item">
+                                        <span class="day-num">26-28</span>
+                                        <div class="day-task">
+                                            <h5>تحدي النمط الصعب</h5>
+                                            <p>ركّز على النمط الأصعب بالنسبة لك - تدرب عليه يومياً</p>
+                                        </div>
+                                    </div>
+                                    <div class="day-item">
+                                        <span class="day-num">29-30</span>
+                                        <div class="day-task">
+                                            <h5>المراجعة والاحتفال</h5>
+                                            <p>راجع إنجازاتك، احتفل، وخطط للشهر القادم</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Accountability System -->
+                    <div class="content-card accountability-card">
+                        <div class="card-header">
+                            <span class="card-icon">👥</span>
+                            <h3>نظام محاسبة الأقران</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="accountability-intro">
+                                <p>الدراسات تثبت: وجود شريك محاسبة يزيد احتمالية تحقيق الأهداف بـ 65%!</p>
+                            </div>
+                            <div class="accountability-steps">
+                                <div class="acc-step">
+                                    <span class="acc-step-num">1</span>
+                                    <div class="acc-step-content">
+                                        <h4>اختر شريك</h4>
+                                        <p>زميل من الفريق مهتم بالتطوير مثلك</p>
+                                    </div>
+                                </div>
+                                <div class="acc-step">
+                                    <span class="acc-step-num">2</span>
+                                    <div class="acc-step-content">
+                                        <h4>حددوا موعد أسبوعي</h4>
+                                        <p>15 دقيقة كل أسبوع لمراجعة التقدم</p>
+                                    </div>
+                                </div>
+                                <div class="acc-step">
+                                    <span class="acc-step-num">3</span>
+                                    <div class="acc-step-content">
+                                        <h4>شاركوا الإنجازات والتحديات</h4>
+                                        <p>ما الذي نجح؟ ما الذي كان صعباً؟</p>
+                                    </div>
+                                </div>
+                                <div class="acc-step">
+                                    <span class="acc-step-num">4</span>
+                                    <div class="acc-step-content">
+                                        <h4>Role-play معاً</h4>
+                                        <p>تدربوا على سيناريوهات مع بعض</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Points Challenge -->
+                    <div class="content-card points-card">
+                        <div class="card-header">
+                            <span class="card-icon">🏅</span>
+                            <h3>تحدي النقاط اليومية</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="points-intro">
+                                <p>حوّل التعلم للعبة! اجمع نقاط يومياً:</p>
+                            </div>
+                            <div class="points-list">
+                                <div class="points-item">
+                                    <span class="points-value">+5</span>
+                                    <span class="points-action">حددت نمط عميل بشكل صحيح</span>
+                                </div>
+                                <div class="points-item">
+                                    <span class="points-value">+10</span>
+                                    <span class="points-action">كيّفت أسلوبك حسب النمط</span>
+                                </div>
+                                <div class="points-item">
+                                    <span class="points-value">+15</span>
+                                    <span class="points-action">رددت على اعتراض بطريقة مناسبة للنمط</span>
+                                </div>
+                                <div class="points-item">
+                                    <span class="points-value">+20</span>
+                                    <span class="points-action">أغلقت صفقة باستخدام التقنية المناسبة</span>
+                                </div>
+                                <div class="points-item">
+                                    <span class="points-value">+25</span>
+                                    <span class="points-action">طبّقت الدورة الكاملة مع عميل واحد</span>
+                                </div>
+                            </div>
+                            <div class="points-targets">
+                                <h4>أهداف النقاط:</h4>
+                                <div class="target-levels">
+                                    <div class="target-level">
+                                        <span class="target-badge bronze">🥉</span>
+                                        <span class="target-points">500 نقطة</span>
+                                        <span class="target-title">مبتدئ DISC</span>
+                                    </div>
+                                    <div class="target-level">
+                                        <span class="target-badge silver">🥈</span>
+                                        <span class="target-points">1000 نقطة</span>
+                                        <span class="target-title">ممارس DISC</span>
+                                    </div>
+                                    <div class="target-level">
+                                        <span class="target-badge gold">🥇</span>
+                                        <span class="target-points">2000 نقطة</span>
+                                        <span class="target-title">خبير DISC</span>
+                                    </div>
+                                    <div class="target-level">
+                                        <span class="target-badge master">🏆</span>
+                                        <span class="target-points">3000+ نقطة</span>
+                                        <span class="target-title">DISC Master</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Final Message -->
+                    <div class="content-card final-message-card">
+                        <div class="card-header">
+                            <span class="card-icon">💫</span>
+                            <h3>رسالة ختامية</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="final-message">
+                                <p>أنا فخور بيك إنك وصلت لهنا. مش كل الناس بتكمّل، بس أنت كمّلت.</p>
+                                <p>الـ 10 حلقات دول مش نهاية الرحلة، دول بداية رحلة جديدة. رحلة إنك تفهم الناس أحسن، تبيع أحسن، وتبني علاقات أقوى.</p>
+                                <p>تذكّر دايماً: كل عميل مختلف، وكل واحد يستحق إنك تتكلم معاه بطريقته. مفيش "one size fits all" في الحياة، ولا في المبيعات.</p>
+                                <p><strong>يلا بينا نغيّر طريقتنا في البيع، عميل بعميل، محادثة بمحادثة.</strong></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Reflection -->
+                    <div class="content-card reflection-card">
+                        <div class="card-header">
+                            <span class="card-icon">💭</span>
+                            <h3>سؤال للتأمل الأخير</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="reflection-question">
+                                <p>"بعد 30 يوم من الآن، كيف سيكون شكل تعاملك مع العملاء؟ ما الفرق الذي ستحدثه في نتائجك؟ اكتب رؤيتك واحتفظ بها."</p>
+                            </div>
+                            <div class="reflection-space">
+                                <textarea placeholder="اكتب رؤيتك للـ 30 يوم القادمة..." rows="6"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sidebar -->
+                <div class="sidebar">
+                    <div class="sidebar-card episode-nav-card">
+                        <h4>التنقل بين الحلقات</h4>
+                        <div class="episode-nav-buttons">
+                            <a href="episode9.html" class="nav-btn">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9 18l6-6-6-6"/>
+                                </svg>
+                                <span>الحلقة السابقة</span>
+                            </a>
+                            <a href="../course.html" class="nav-btn">
+                                <span>كل الحلقات</span>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M15 18l-6-6 6-6"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-card resources-card">
+                        <h4>📥 موارد هذه الحلقة</h4>
+                        <ul class="resources-list">
+                            <li>
+                                <a href="../downloads/30-day-calendar.pdf" class="resource-link">
+                                    <span class="resource-icon">📅</span>
+                                    <span class="resource-name">تقويم الـ 30 يوم للطباعة</span>
+                                    <span class="resource-type">PDF</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../downloads/points-tracker.pdf" class="resource-link">
+                                    <span class="resource-icon">📊</span>
+                                    <span class="resource-name">متتبع النقاط</span>
+                                    <span class="resource-type">PDF</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../downloads/accountability-template.pdf" class="resource-link">
+                                    <span class="resource-icon">👥</span>
+                                    <span class="resource-name">قالب محاسبة الأقران</span>
+                                    <span class="resource-type">PDF</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Certificate CTA -->
+                    <div class="sidebar-card certificate-cta-card">
+                        <div class="certificate-icon">🎓</div>
+                        <h4>احصل على شهادتك!</h4>
+                        <p>أكملت الكورس بنجاح. احصل على شهادة إتمام باسمك.</p>
+                        <a href="../resources.html#certificate" class="btn btn-primary btn-sm">تحميل الشهادة</a>
+                    </div>
+
+                    <div class="sidebar-card progress-card complete">
+                        <h4>🎉 تهانينا!</h4>
+                        <div class="progress-info">
+                            <div class="progress-bar-mini">
+                                <div class="progress-fill-mini" style="width: 100%"></div>
+                            </div>
+                            <span class="progress-text">10 من 10 حلقات - 100%! 🏆</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Completion CTA -->
+    <section class="completion-cta-section">
+        <div class="container">
+            <div class="completion-cta-content">
+                <div class="completion-icon">🏆</div>
+                <h2>مبروك! أكملت الكورس بنجاح!</h2>
+                <p>أنت الآن جاهز لتطبيق DISC في مبيعاتك اليومية</p>
+                <div class="completion-actions">
+                    <a href="../resources.html#certificate" class="btn btn-primary btn-lg">
+                        <span>🎓</span>
+                        <span>تحميل الشهادة</span>
+                    </a>
+                    <a href="../resources.html" class="btn btn-secondary btn-lg">
+                        <span>📦</span>
+                        <span>تحميل جميع الموارد</span>
+                    </a>
+                    <a href="../quiz.html" class="btn btn-outline btn-lg">
+                        <span>🧠</span>
+                        <span>اختبر معلوماتك</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Episode Navigation Footer -->
+    <section class="episode-footer-nav">
+        <div class="container">
+            <div class="footer-nav-content">
+                <a href="episode9.html" class="prev-episode">
+                    <span class="nav-label">الحلقة السابقة</span>
+                    <span class="nav-title">إغلاق الصفقة</span>
+                </a>
+                <a href="../course.html" class="all-episodes-btn">
+                    <span>📚</span>
+                    <span>كل الحلقات</span>
+                </a>
+                <a href="../resources.html" class="next-episode">
+                    <span class="nav-label">الخطوة التالية</span>
+                    <span class="nav-title">الأدوات والموارد</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>© 2024 DISC Sales Mastery. مصمم بـ ❤️ للـ Learning & Development Team</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
