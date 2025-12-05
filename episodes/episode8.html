@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الحلقة 8: التعامل مع الاعتراضات | DISC Sales Mastery</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">
+                <span class="logo-icon">🎯</span>
+                <span class="logo-text">DISC<span class="logo-highlight">Sales</span></span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="../index.html" class="nav-link">الرئيسية</a></li>
+                <li><a href="../course.html" class="nav-link active">الكورس</a></li>
+                <li><a href="../resources.html" class="nav-link">الأدوات</a></li>
+                <li><a href="../implementation.html" class="nav-link">دليل التطبيق</a></li>
+                <li><a href="../about.html" class="nav-link">عن الكورس</a></li>
+                <li><a href="../quiz.html" class="nav-link nav-cta">اكتشف شخصيتك</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Episode Header -->
+    <section class="episode-header episode-header-mixed">
+        <div class="container">
+            <div class="episode-nav-breadcrumb">
+                <a href="../course.html">الكورس</a>
+                <span class="separator">/</span>
+                <span>الحلقة 8</span>
+            </div>
+            <div class="episode-header-content">
+                <div class="episode-badge">
+                    <span class="episode-num">الحلقة 08</span>
+                    <span class="episode-duration">⏱️ 10 دقائق</span>
+                </div>
+                <h1>التعامل مع الاعتراضات حسب نوع الشخصية</h1>
+                <p class="episode-subtitle-large">Handling Objections by Personality Type</p>
+                <div class="episode-sape-indicators">
+                    <div class="sape-indicator" data-type="S">
+                        <span class="indicator-letter">S</span>
+                        <span class="indicator-text">سيناريوهات Role-play</span>
+                    </div>
+                    <div class="sape-indicator" data-type="A">
+                        <span class="indicator-letter">A</span>
+                        <span class="indicator-text">معادلة الرد على الاعتراضات</span>
+                    </div>
+                    <div class="sape-indicator" data-type="P">
+                        <span class="indicator-letter">P</span>
+                        <span class="indicator-text">4 اعتراضات × 4 أنماط</span>
+                    </div>
+                    <div class="sape-indicator" data-type="E">
+                        <span class="indicator-letter">E</span>
+                        <span class="indicator-text">الاعتراض = طلب طمأنة</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Audio Player Section -->
+    <section class="audio-section">
+        <div class="container">
+            <div class="audio-player-card">
+                <div class="audio-visual">
+                    <div class="audio-artwork">
+                        <div class="artwork-bg"></div>
+                        <span class="artwork-number">08</span>
+                        <div class="sound-waves">
+                            <span class="wave"></span>
+                            <span class="wave"></span>
+                            <span class="wave"></span>
+                            <span class="wave"></span>
+                            <span class="wave"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="audio-controls">
+                    <div class="custom-audio-player">
+                        <button class="play-pause-btn" id="playPauseBtn" onclick="togglePlay()">
+                            <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M8 5v14l11-7z"/>
+                            </svg>
+                        </button>
+                        <div class="progress-container">
+                            <div class="time-display">
+                                <span id="currentTime">0:00</span>
+                                <span id="duration">10:00</span>
+                            </div>
+                            <div class="progress-bar" id="progressBar">
+                                <div class="progress-fill" id="progressFill"></div>
+                            </div>
+                        </div>
+                        <button class="speed-btn" onclick="changeSpeed()">
+                            <span id="speedDisplay">1x</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Episode Content -->
+    <section class="episode-content-section">
+        <div class="container">
+            <div class="content-grid">
+                <div class="main-content">
+                    <!-- Key Takeaways -->
+                    <div class="content-card takeaways-card">
+                        <div class="card-header">
+                            <span class="card-icon">🎯</span>
+                            <h3>النقاط الرئيسية</h3>
+                        </div>
+                        <div class="card-body">
+                            <ul class="takeaways-list">
+                                <li>
+                                    <span class="takeaway-icon">✓</span>
+                                    <span>الاعتراض ليس رفضاً - هو طلب للمزيد من المعلومات أو الطمأنة</span>
+                                </li>
+                                <li>
+                                    <span class="takeaway-icon">✓</span>
+                                    <span>كل نمط يعترض بطريقة مختلفة ويحتاج رداً مختلفاً</span>
+                                </li>
+                                <li>
+                                    <span class="takeaway-icon">✓</span>
+                                    <span>4 اعتراضات شائعة × 4 أنماط = 16 استراتيجية للرد</span>
+                                </li>
+                                <li>
+                                    <span class="takeaway-icon">✓</span>
+                                    <span>معادلة الرد: استمع → تفهّم → أجب حسب النمط → تأكد</span>
+                                </li>
+                                <li>
+                                    <span class="takeaway-icon">✓</span>
+                                    <span>الاعتراض فرصة لتقوية العلاقة وبناء الثقة</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Objection Matrix -->
+                    <div class="content-card matrix-card">
+                        <div class="card-header">
+                            <span class="card-icon">📊</span>
+                            <h3>مصفوفة الاعتراضات: 4 × 4</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="matrix-intro">
+                                <p>كيف ترد على أشهر 4 اعتراضات حسب نمط العميل:</p>
+                            </div>
+
+                            <!-- Objection 1: Price -->
+                            <div class="objection-block">
+                                <h4 class="objection-title">💰 الاعتراض 1: "السعر غالي"</h4>
+                                <div class="responses-grid">
+                                    <div class="response-card response-d">
+                                        <span class="response-type">D</span>
+                                        <p><strong>الرد:</strong> "استثمار X سيعود عليك بـ Y. الـ ROI خلال 3 أشهر. هل نبدأ؟"</p>
+                                    </div>
+                                    <div class="response-card response-i">
+                                        <span class="response-type">I</span>
+                                        <p><strong>الرد:</strong> "فهمتك! كتير من العملاء حسوا نفس الإحساس، بس بعد ما جربوا قالوا إنه أفضل قرار أخذوه"</p>
+                                    </div>
+                                    <div class="response-card response-s">
+                                        <span class="response-type">S</span>
+                                        <p><strong>الرد:</strong> "أفهم قلقك تماماً. خلينا نشوف مع بعض القيمة الحقيقية، وممكن نبدأ بخطةمريحة ليك"</p>
+                                    </div>
+                                    <div class="response-card response-c">
+                                        <span class="response-type">C</span>
+                                        <p><strong>الرد:</strong> "دعني أريك تحليل التكلفة مقابل العائد بالأرقام. هنا جدول مقارنة مع البدائل"</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Objection 2: Need to Think -->
+                            <div class="objection-block">
+                                <h4 class="objection-title">🤔 الاعتراض 2: "محتاج أفكر"</h4>
+                                <div class="responses-grid">
+                                    <div class="response-card response-d">
+                                        <span class="response-type">D</span>
+                                        <p><strong>الرد:</strong> "طبعاً. ما المعلومة الناقصة؟ خليني أوفرها الآن عشان تقدر تقرر"</p>
+                                    </div>
+                                    <div class="response-card response-i">
+                                        <span class="response-type">I</span>
+                                        <p><strong>الرد:</strong> "أكيد! هل تحب نتكلم مع عميل حالي يحكيلك عن تجربته؟ ممكن يساعدك في القرار"</p>
+                                    </div>
+                                    <div class="response-card response-s">
+                                        <span class="response-type">S</span>
+                                        <p><strong>الرد:</strong> "خذ وقتك بالكامل. أنا هنا لأي سؤال. متى يناسبك نتكلم مرة ثانية؟"</p>
+                                    </div>
+                                    <div class="response-card response-c">
+                                        <span class="response-type">C</span>
+                                        <p><strong>الرد:</strong> "ممتاز. هل تحب أرسلك ملف التفاصيل الكامل؟ وأي أسئلة إضافية أجاوبها كتابياً"</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Objection 3: Competitor -->
+                            <div class="objection-block">
+                                <h4 class="objection-title">🏢 الاعتراض 3: "عندي مورد حالي"</h4>
+                                <div class="responses-grid">
+                                    <div class="response-card response-d">
+                                        <span class="response-type">D</span>
+                                        <p><strong>الرد:</strong> "ممتاز. ما الشيء الذي لو تحسّن سيعطيك نتائج أفضل؟ هنا يمكننا نضيف قيمة"</p>
+                                    </div>
+                                    <div class="response-card response-i">
+                                        <span class="response-type">I</span>
+                                        <p><strong>الرد:</strong> "رائع إنك مرتاح! كتير من عملائنا كانوا نفس الشيء، بس اكتشفوا قيمة إضافية معانا. تحب أحكيلك؟"</p>
+                                    </div>
+                                    <div class="response-card response-s">
+                                        <span class="response-type">S</span>
+                                        <p><strong>الرد:</strong> "أحترم ولاءك للمورد الحالي. مش هدفي أغيّر، بس لو يوم احتجت بديل، أحب أكون خيارك"</p>
+                                    </div>
+                                    <div class="response-card response-c">
+                                        <span class="response-type">C</span>
+                                        <p><strong>الرد:</strong> "مفهوم. هل تسمحلي أرسلك مقارنة موضوعية؟ يمكنك تقيّمها بنفسك بدون أي ضغط"</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Objection 4: Not Now -->
+                            <div class="objection-block">
+                                <h4 class="objection-title">⏰ الاعتراض 4: "مش الوقت المناسب"</h4>
+                                <div class="responses-grid">
+                                    <div class="response-card response-d">
+                                        <span class="response-type">D</span>
+                                        <p><strong>الرد:</strong> "فاهم. ما التوقيت المناسب؟ وما الذي يجعله مناسباً؟"</p>
+                                    </div>
+                                    <div class="response-card response-i">
+                                        <span class="response-type">I</span>
+                                        <p><strong>الرد:</strong> "أفهمك! الوقت دايماً تحدي. ما رأيك نحجز موعد بعد شهر ونشوف وضعك؟"</p>
+                                    </div>
+                                    <div class="response-card response-s">
+                                        <span class="response-type">S</span>
+                                        <p><strong>الرد:</strong> "تماماً، لا تقلق. متى يكون الوقت أفضل ليك؟ أنا مرن ومتاح"</p>
+                                    </div>
+                                    <div class="response-card response-c">
+                                        <span class="response-type">C</span>
+                                        <p><strong>الرد:</strong> "مفهوم. هل يمكنني أرسلك المعلومات الآن عشان تكون جاهزة لما يحين الوقت؟"</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Objection Formula -->
+                    <div class="content-card formula-card">
+                        <div class="card-header">
+                            <span class="card-icon">🧮</span>
+                            <h3>معادلة الرد على الاعتراضات</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="formula-steps">
+                                <div class="formula-step">
+                                    <span class="step-number">1</span>
+                                    <div class="step-content">
+                                        <h4>استمع بالكامل</h4>
+                                        <p>لا تقاطع. دع العميل يعبّر عن اعتراضه كاملاً</p>
+                                    </div>
+                                </div>
+                                <div class="formula-step">
+                                    <span class="step-number">2</span>
+                                    <div class="step-content">
+                                        <h4>أظهر التفهّم</h4>
+                                        <p>"أفهم..." / "هذا منطقي..." / "كثيرون يشعرون بنفس الشيء..."</p>
+                                    </div>
+                                </div>
+                                <div class="formula-step">
+                                    <span class="step-number">3</span>
+                                    <div class="step-content">
+                                        <h4>أجب حسب النمط</h4>
+                                        <p>D: مباشر وسريع | I: قصة وحماس | S: طمأنة وصبر | C: بيانات ودقة</p>
+                                    </div>
+                                </div>
+                                <div class="formula-step">
+                                    <span class="step-number">4</span>
+                                    <div class="step-content">
+                                        <h4>تأكد من الإجابة</h4>
+                                        <p>"هل هذا يجاوب على سؤالك؟" / "هل هناك شيء آخر يقلقك؟"</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Quick Action -->
+                    <div class="content-card action-card">
+                        <div class="card-header">
+                            <span class="card-icon">⚡</span>
+                            <h3>التطبيق العملي</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="action-item">
+                                <h4>قبل الحلقة القادمة:</h4>
+                                <div class="action-task">
+                                    <span class="task-number">1</span>
+                                    <div class="task-content">
+                                        <p>اكتب أكثر 3 اعتراضات تسمعها من العملاء</p>
+                                    </div>
+                                </div>
+                                <div class="action-task">
+                                    <span class="task-number">2</span>
+                                    <div class="task-content">
+                                        <p>جهّز 4 ردود مختلفة لكل اعتراض (واحد لكل نمط)</p>
+                                    </div>
+                                </div>
+                                <div class="action-task">
+                                    <span class="task-number">3</span>
+                                    <div class="task-content">
+                                        <p>تدرب مع زميل على Role-play باستخدام المصفوفة</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Reflection -->
+                    <div class="content-card reflection-card">
+                        <div class="card-header">
+                            <span class="card-icon">💭</span>
+                            <h3>سؤال للتأمل</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="reflection-question">
+                                <p>"فكّر في اعتراض أحبطك مؤخراً... هل كان العميل يرفضك فعلاً، أم كان يطلب المزيد من الطمأنة بطريقته الخاصة؟"</p>
+                            </div>
+                            <div class="reflection-space">
+                                <textarea placeholder="اكتب أفكارك هنا..." rows="4"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sidebar -->
+                <div class="sidebar">
+                    <div class="sidebar-card episode-nav-card">
+                        <h4>التنقل بين الحلقات</h4>
+                        <div class="episode-nav-buttons">
+                            <a href="episode7.html" class="nav-btn">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9 18l6-6-6-6"/>
+                                </svg>
+                                <span>الحلقة السابقة</span>
+                            </a>
+                            <a href="episode9.html" class="nav-btn">
+                                <span>الحلقة التالية</span>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M15 18l-6-6 6-6"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-card resources-card">
+                        <h4>📥 موارد هذه الحلقة</h4>
+                        <ul class="resources-list">
+                            <li>
+                                <a href="../downloads/objection-matrix.pdf" class="resource-link">
+                                    <span class="resource-icon">📄</span>
+                                    <span class="resource-name">مصفوفة الاعتراضات الكاملة</span>
+                                    <span class="resource-type">PDF</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../downloads/objection-scripts.pdf" class="resource-link">
+                                    <span class="resource-icon">🗣️</span>
+                                    <span class="resource-name">نصوص الرد الجاهزة</span>
+                                    <span class="resource-type">PDF</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../downloads/roleplay-scenarios.pdf" class="resource-link">
+                                    <span class="resource-icon">🎭</span>
+                                    <span class="resource-name">سيناريوهات Role-play</span>
+                                    <span class="resource-type">PDF</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="sidebar-card progress-card">
+                        <h4>📊 تقدمك في الكورس</h4>
+                        <div class="progress-info">
+                            <div class="progress-bar-mini">
+                                <div class="progress-fill-mini" style="width: 80%"></div>
+                            </div>
+                            <span class="progress-text">8 من 10 حلقات</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Episode Navigation Footer -->
+    <section class="episode-footer-nav">
+        <div class="container">
+            <div class="footer-nav-content">
+                <a href="episode7.html" class="prev-episode">
+                    <span class="nav-label">الحلقة السابقة</span>
+                    <span class="nav-title">مرونة الأسلوب</span>
+                </a>
+                <a href="../course.html" class="all-episodes-btn">
+                    <span>📚</span>
+                    <span>كل الحلقات</span>
+                </a>
+                <a href="episode9.html" class="next-episode">
+                    <span class="nav-label">الحلقة التالية</span>
+                    <span class="nav-title">إغلاق الصفقة</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>© 2024 DISC Sales Mastery. مصمم بـ ❤️ للـ Learning & Development Team</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
