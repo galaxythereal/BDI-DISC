@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الحلقة 1: ليه أحسن Pitch بتاعك بيفشل؟ | DISC Sales Mastery</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">
+                <span class="logo-icon">🎯</span>
+                <span class="logo-text">DISC<span class="logo-highlight">Sales</span></span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="../index.html" class="nav-link">الرئيسية</a></li>
+                <li><a href="../course.html" class="nav-link active">الكورس</a></li>
+                <li><a href="../resources.html" class="nav-link">الأدوات</a></li>
+                <li><a href="../implementation.html" class="nav-link">دليل التطبيق</a></li>
+                <li><a href="../about.html" class="nav-link">عن الكورس</a></li>
+                <li><a href="../quiz.html" class="nav-link nav-cta">اكتشف شخصيتك</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Episode Header -->
+    <section class="episode-header">
+        <div class="container">
+            <div class="episode-nav-breadcrumb">
+                <a href="../course.html">الكورس</a>
+                <span class="separator">/</span>
+                <span>الحلقة 1</span>
+            </div>
+            <div class="episode-header-content">
+                <div class="episode-badge">
+                    <span class="episode-num">الحلقة 01</span>
+                    <span class="episode-duration">⏱️ 9 دقائق</span>
+                </div>
+                <h1>ليه أحسن Pitch بتاعك بيفشل؟</h1>
+                <p class="episode-subtitle-large">The Problem & The Solution</p>
+                <div class="episode-sape-indicators">
+                    <div class="sape-indicator" data-type="S">
+                        <span class="indicator-letter">S</span>
+                        <span class="indicator-text">قصة أحمد وياسمين</span>
+                    </div>
+                    <div class="sape-indicator" data-type="A">
+                        <span class="indicator-letter">A</span>
+                        <span class="indicator-text">الـ 4 أنماط في 90 ثانية</span>
+                    </div>
+                    <div class="sape-indicator" data-type="P">
+                        <span class="indicator-letter">P</span>
+                        <span class="indicator-text">مثال حقيقي من الواقع</span>
+                    </div>
+                    <div class="sape-indicator" data-type="E">
+                        <span class="indicator-letter">E</span>
+                        <span class="indicator-text">الإحباط من خسارة الـ deals</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Audio Player Section -->
+    <section class="audio-section">
+        <div class="container">
+            <div class="audio-player-card">
+                <div class="audio-visual">
+                    <div class="audio-artwork">
+                        <div class="artwork-bg"></div>
+                        <span class="artwork-number">01</span>
+                        <div class="sound-waves">
+                            <span class="wave"></span>
+                            <span class="wave"></span>
+                            <span class="wave"></span>
+                            <span class="wave"></span>
+                            <span class="wave"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="audio-controls">
+                    <div class="audio-player-wrapper">
+                        <audio id="episode-audio" preload="metadata">
+                            <source src="../assets/audio/episode1.mp3" type="audio/mpeg">
+                            متصفحك لا يدعم تشغيل الصوت
+                        </audio>
+                        <div class="custom-audio-player">
+                            <button class="play-pause-btn" id="playPauseBtn" onclick="togglePlay()">
+                                <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M8 5v14l11-7z"/>
+                                </svg>
+                                <svg class="pause-icon hidden" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>
+                                </svg>
+                            </button>
+                            <div class="progress-container">
+                                <div class="time-display">
+                                    <span id="currentTime">0:00</span>
+                                    <span id="duration">9:00</span>
+                                </div>
+                                <div class="progress-bar" id="progressBar" onclick="seek(event)">
+                                    <div class="progress-fill" id="progressFill"></div>
+                                    <div class="progress-handle" id="progressHandle"></div>
+                                </div>
+                            </div>
+                            <div class="volume-control">
+                                <button class="volume-btn" onclick="toggleMute()">
+                                    <svg class="volume-icon" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/>
+                                    </svg>
+                                </button>
+                                <input type="range" class="volume-slider" id="volumeSlider" min="0" max="100" value="80" onchange="changeVolume(this.value)">
+                            </div>
+                            <button class="speed-btn" onclick="changeSpeed()">
+                                <span id="speedDisplay">1x</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="audio-actions">
+                        <button class="action-btn" onclick="skipTime(-10)">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 5V1L7 6l5 5V7c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6H4c0 4.42 3.58 8 8 8s8-3.58 8-8-3.58-8-8-8z"/>
+                            </svg>
+                            <span>-10s</span>
+                        </button>
+                        <button class="action-btn" onclick="skipTime(10)">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 5V1l5 5-5 5V7c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6h2c0 4.42-3.58 8-8 8s-8-3.58-8-8 3.58-8 8-8z"/>
+                            </svg>
+                            <span>+10s</span>
+                        </button>
+                        <button class="action-btn download-btn">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/>
+                            </svg>
+                            <span>تحميل</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Episode Content -->
+    <section class="episode-content-section">
+        <div class="container">
+            <div class="content-grid">
+                <!-- Main Content -->
+                <div class="main-content">
+                    <!-- Key Takeaways -->
+                    <div class="content-card takeaways-card">
+                        <div class="card-header">
+                            <span class="card-icon">🎯</span>
+                            <h3>النقاط الرئيسية</h3>
+                        </div>
+                        <div class="card-body">
+                            <ul class="takeaways-list">
+                                <li>
+                                    <span class="takeaway-icon">✓</span>
+                                    <span>نفس الـ Pitch ممكن ينجح مع عميل ويفشل مع آخر - السبب مش المنتج، السبب الشخصية</span>
+                                </li>
+                                <li>
+                                    <span class="takeaway-icon">✓</span>
+                                    <span>نموذج DISC يقسم الناس لـ 4 أنماط: D (القيادي)، I (الاجتماعي)، S (الهادئ)، C (التحليلي)</span>
+                                </li>
+                                <li>
+                                    <span class="takeaway-icon">✓</span>
+                                    <span>التكيف مع شخصية العميل هو المفتاح لزيادة معدل إغلاق الصفقات</span>
+                                </li>
+                                <li>
+                                    <span class="takeaway-icon">✓</span>
+                                    <span>مفيش "One Size Fits All" في المبيعات - كل عميل محتاج أسلوب مختلف</span>
+                                </li>
+                                <li>
+                                    <span class="takeaway-icon">✓</span>
+                                    <span>في الـ 10 حلقات دول، هتتعلم تحدد الشخصية في دقيقتين وتكيّف أسلوبك</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Transcript -->
+                    <div class="content-card transcript-card">
+                        <div class="card-header">
+                            <span class="card-icon">📝</span>
+                            <h3>نص الحلقة</h3>
+                            <button class="expand-transcript-btn" onclick="toggleTranscript()">
+                                <span>عرض النص الكامل</span>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M6 9l6 6 6-6"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="card-body transcript-body">
+                            <div class="transcript-content" id="transcriptContent">
+                                <div class="transcript-section">
+                                    <span class="transcript-timestamp">0:00</span>
+                                    <p class="transcript-text"><strong>[INTRO MUSIC - 10 seconds]</strong></p>
+                                </div>
+                                <div class="transcript-section">
+                                    <span class="transcript-timestamp">0:10</span>
+                                    <p class="transcript-text">مرحباً، أنا معاك في أول episode من الـ course بتاعنا عن الـ DISC model في الـ sales.</p>
+                                </div>
+                                <div class="transcript-section" data-sape="S">
+                                    <span class="transcript-timestamp">0:20</span>
+                                    <span class="transcript-sape-tag">للـ S - Social</span>
+                                    <p class="transcript-text">خليني أحكيلك story حصلت قدامي الأسبوع اللي فات. في اتنين salespeople في نفس الشركة، أحمد وياسمين. الاتنين بيبيعوا نفس الـ product بالظبط، نفس الـ features، نفس الـ price، نفس الـ quality.</p>
+                                </div>
+                                <div class="transcript-section">
+                                    <span class="transcript-timestamp">0:45</span>
+                                    <p class="transcript-text">أحمد راح لعميل كبير، عمل presentation رهيبة، full of energy، كان واثق جداً، عرض كل حاجة بالتفصيل... والعميل قاله "هفكر وأرجعلك". ومرجعش.</p>
+                                </div>
+                                <div class="transcript-section">
+                                    <span class="transcript-timestamp">1:05</span>
+                                    <p class="transcript-text">ياسمين راحت لنفس النوع من العملاء، بس بطريقة مختلفة تماماً. كانت هادية، سمعت كتير، سألت أسئلة، أخذت وقتها... والعميل وقّع معاها في نفس الـ meeting.</p>
+                                </div>
+                                <div class="transcript-section" data-sape="E">
+                                    <span class="transcript-timestamp">1:30</span>
+                                    <span class="transcript-sape-tag">للـ E - Emotional</span>
+                                    <p class="transcript-text">تخيل الـ frustration اللي أحمد حس بيها. هو شغل على الـ presentation أسبوع كامل، كان متحمس، كان فاهم الـ product كويس جداً، بس برضو خسر الـ deal. والسؤال اللي بيسأله لنفسه: "أنا غلطت في إيه؟"</p>
+                                </div>
+                                <div class="transcript-section" data-sape="P">
+                                    <span class="transcript-timestamp">2:00</span>
+                                    <span class="transcript-sape-tag">للـ P - Practical</span>
+                                    <p class="transcript-text">الحقيقة؟ أحمد مغلطش في المعلومات. المشكلة إن العميل ده كان شخصية من نوع معين بتحتاج approach مختلف تماماً. العميل ده كان محتاج حد يسمعه ويفهم الـ concerns بتاعته، مش حد يقنعه بـ energy عالية.</p>
+                                </div>
+                                <div class="transcript-section">
+                                    <span class="transcript-timestamp">2:25</span>
+                                    <p class="transcript-text">ياسمين فهمت personality الـ customer، وعدّلت الـ selling style بتاعتها عشان تتناسب معاه.</p>
+                                </div>
+                                <div class="transcript-section" data-sape="A">
+                                    <span class="transcript-timestamp">2:40</span>
+                                    <span class="transcript-sape-tag">للـ A - Action</span>
+                                    <p class="transcript-text">النهاردة وفي الـ 10 episodes الجايين، أنت هتتعلم الـ DISC model. ده framework بيقسم الناس لـ 4 personality types:</p>
+                                </div>
+                                <div class="transcript-section">
+                                    <span class="transcript-timestamp">2:55</span>
+                                    <p class="transcript-text">واحد: الـ D - Dominance. الشخصية القيادية، السريعة، اللي عايزة results فوراً.</p>
+                                </div>
+                                <div class="transcript-section">
+                                    <span class="transcript-timestamp">3:10</span>
+                                    <p class="transcript-text">اتنين: الـ I - Influence. الشخصية الاجتماعية، المتحمسة، اللي بتحب الـ connection والـ relationships.</p>
+                                </div>
+                                <div class="transcript-section">
+                                    <span class="transcript-timestamp">3:25</span>
+                                    <p class="transcript-text">تلاتة: الـ S - Steadiness. الشخصية الهادية، الصبورة، اللي بتحب الـ stability والأمان.</p>
+                                </div>
+                                <div class="transcript-section">
+                                    <span class="transcript-timestamp">3:40</span>
+                                    <p class="transcript-text">أربعة: الـ C - Conscientiousness. الشخصية التحليلية، الدقيقة، اللي بتحب الـ details والـ data.</p>
+                                </div>
+                                <div class="transcript-section" data-sape="S">
+                                    <span class="transcript-timestamp">4:00</span>
+                                    <span class="transcript-sape-tag">للـ S - Social</span>
+                                    <p class="transcript-text">والحلو في الموضوع إنك مش لوحدك في الرحلة دي. كل الـ sales team هيتعلموا نفس الـ language، نفس الـ framework. تخيل لما كلكم تبقوا تعرفوا تقروا الـ customers بنفس الطريقة وتتشاركوا الـ insights مع بعض.</p>
+                                </div>
+                                <div class="transcript-section" data-sape="E">
+                                    <span class="transcript-timestamp">4:30</span>
+                                    <span class="transcript-sape-tag">للـ E - Emotional</span>
+                                    <p class="transcript-text">الـ course ده مش بس عشان تزوّد الـ sales numbers بتاعتك. ده عشان تحس بـ confidence أكتر، تفهم الناس أحسن، وتبني relationships حقيقية مع الـ customers بتوعك. عشان تبطّل تحس إنك بتخسر deals من غير ما تعرف ليه.</p>
+                                </div>
+                                <div class="transcript-section" data-sape="P">
+                                    <span class="transcript-timestamp">5:00</span>
+                                    <span class="transcript-sape-tag">للـ P - Practical</span>
+                                    <p class="transcript-text">في نهاية الـ 10 episodes دول، هتبقى قادر تعمل الآتي:</p>
+                                </div>
+                                <div class="transcript-section">
+                                    <span class="transcript-timestamp">5:10</span>
+                                    <p class="transcript-text">تحدد personality type لأي customer في أول دقيقتين من الـ conversation</p>
+                                </div>
+                                <div class="transcript-section">
+                                    <span class="transcript-timestamp">5:20</span>
+                                    <p class="transcript-text">تعدّل الـ pitch بتاعك في الـ real-time عشان يتناسب مع شخصيته</p>
+                                </div>
+                                <div class="transcript-section">
+                                    <span class="transcript-timestamp">5:30</span>
+                                    <p class="transcript-text">تتعامل مع الـ objections بناءً على الـ personality type</p>
+                                </div>
+                                <div class="transcript-section">
+                                    <span class="transcript-timestamp">5:40</span>
+                                    <p class="transcript-text">تعمل close للـ deal بطريقة تخلي الـ customer مرتاح ومقتنع</p>
+                                </div>
+                                <div class="transcript-section" data-sape="A">
+                                    <span class="transcript-timestamp">5:55</span>
+                                    <span class="transcript-sape-tag">للـ A - Action</span>
+                                    <p class="transcript-text">دلوقتي، الـ action المطلوبة منك:</p>
+                                </div>
+                                <div class="transcript-section">
+                                    <span class="transcript-timestamp">6:05</span>
+                                    <p class="transcript-text">أولاً: بعد ما تخلص الـ episode ده، فكّر في آخر 3 customers اتكلمت معاهم. حاول تفتكر: مين فيهم كان سريع ومباشر؟ مين كان ودود ومتحمس؟ مين كان محتاج وقت عشان يفكر؟ ومين كان بيسأل أسئلة تفصيلية كتير؟</p>
+                                </div>
+                                <div class="transcript-section">
+                                    <span class="transcript-timestamp">6:40</span>
+                                    <p class="transcript-text">ثانياً: في الـ episode الجاي، هنتعمق في أول personality type وهو الـ D - Dominance. الشخصية القيادية اللي بتخوّف بعض الـ salespeople بس لما تفهمها هتبقى من أسهل الـ types في الـ closing.</p>
+                                </div>
+                                <div class="transcript-section" data-sape="E">
+                                    <span class="transcript-timestamp">7:10</span>
+                                    <span class="transcript-sape-tag">للـ E - Emotional</span>
+                                    <p class="transcript-text">أنا فخور بيك إنك بدأت الرحلة دي. كل واحد فينا عنده الـ potential إنه يبقى top performer، بس المفتاح هو إننا نفهم إن مفيش "one size fits all" في الـ sales. كل customer مختلف، وكل واحد محتاج approach مختلف.</p>
+                                </div>
+                                <div class="transcript-section" data-sape="S">
+                                    <span class="transcript-timestamp">7:45</span>
+                                    <span class="transcript-sape-tag">للـ S - Social</span>
+                                    <p class="transcript-text">استنّاك في الـ episode الجاي، وإذا حبيت تشارك أي ملاحظات أو questions، أنا موجود. إحنا في الرحلة دي مع بعض.</p>
+                                </div>
+                                <div class="transcript-section">
+                                    <span class="transcript-timestamp">8:05</span>
+                                    <p class="transcript-text">يلا بينا نبدأ نفهم الناس أحسن، ونبيع أحسن، ونبني علاقات أقوى.</p>
+                                </div>
+                                <div class="transcript-section">
+                                    <span class="transcript-timestamp">8:20</span>
+                                    <p class="transcript-text"><strong>[OUTRO MUSIC - 5 seconds]</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Quick Action -->
+                    <div class="content-card action-card">
+                        <div class="card-header">
+                            <span class="card-icon">⚡</span>
+                            <h3>التطبيق العملي</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="action-item">
+                                <h4>قبل الحلقة القادمة، طبّق الآتي:</h4>
+                                <div class="action-task">
+                                    <span class="task-number">1</span>
+                                    <div class="task-content">
+                                        <p>فكّر في آخر 3 عملاء تحدثت معهم وحاول تصنيفهم:</p>
+                                        <ul>
+                                            <li>مين كان سريع ومباشر؟ (محتمل D)</li>
+                                            <li>مين كان ودود ومتحمس؟ (محتمل I)</li>
+                                            <li>مين كان هادئ ومحتاج وقت؟ (محتمل S)</li>
+                                            <li>مين كان بيسأل أسئلة تفصيلية؟ (محتمل C)</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="action-task">
+                                    <span class="task-number">2</span>
+                                    <div class="task-content">
+                                        <p>اكتب ملاحظاتك في ورقة أو في الموبايل - هنحتاجها في الحلقات القادمة</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Reflection Question -->
+                    <div class="content-card reflection-card">
+                        <div class="card-header">
+                            <span class="card-icon">💭</span>
+                            <h3>سؤال للتأمل</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="reflection-question">
+                                <p>"فكّر في deal خسرته في الفترة الأخيرة وكنت متأكد إنك هتكسبها... هل ممكن يكون السبب إن أسلوبك مكانش متناسب مع شخصية العميل؟"</p>
+                            </div>
+                            <div class="reflection-space">
+                                <textarea placeholder="اكتب أفكارك هنا..." rows="4"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sidebar -->
+                <div class="sidebar">
+                    <!-- Episode Navigation -->
+                    <div class="sidebar-card episode-nav-card">
+                        <h4>التنقل بين الحلقات</h4>
+                        <div class="episode-nav-buttons">
+                            <a href="#" class="nav-btn disabled">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9 18l6-6-6-6"/>
+                                </svg>
+                                <span>الحلقة السابقة</span>
+                            </a>
+                            <a href="episode2.html" class="nav-btn">
+                                <span>الحلقة التالية</span>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M15 18l-6-6 6-6"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Resources -->
+                    <div class="sidebar-card resources-card">
+                        <h4>📥 موارد هذه الحلقة</h4>
+                        <ul class="resources-list">
+                            <li>
+                                <a href="../downloads/disc-overview.pdf" class="resource-link">
+                                    <span class="resource-icon">📄</span>
+                                    <span class="resource-name">ملخص نموذج DISC</span>
+                                    <span class="resource-type">PDF</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../downloads/episode1-notes.pdf" class="resource-link">
+                                    <span class="resource-icon">📝</span>
+                                    <span class="resource-name">ملاحظات الحلقة</span>
+                                    <span class="resource-type">PDF</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Quick Quiz -->
+                    <div class="sidebar-card quiz-card">
+                        <h4>🧠 اختبر فهمك</h4>
+                        <div class="mini-quiz">
+                            <p class="quiz-question">ما السبب الرئيسي لفشل pitch أحمد؟</p>
+                            <div class="quiz-options">
+                                <label class="quiz-option">
+                                    <input type="radio" name="q1" value="a">
+                                    <span>المنتج كان سيء</span>
+                                </label>
+                                <label class="quiz-option">
+                                    <input type="radio" name="q1" value="b">
+                                    <span>السعر كان عالي</span>
+                                </label>
+                                <label class="quiz-option correct">
+                                    <input type="radio" name="q1" value="c">
+                                    <span>أسلوبه لم يتناسب مع شخصية العميل</span>
+                                </label>
+                                <label class="quiz-option">
+                                    <input type="radio" name="q1" value="d">
+                                    <span>العميل لم يكن مهتماً</span>
+                                </label>
+                            </div>
+                            <button class="btn btn-secondary btn-sm check-answer-btn" onclick="checkAnswer()">تحقق من إجابتك</button>
+                        </div>
+                    </div>
+
+                    <!-- Progress -->
+                    <div class="sidebar-card progress-card">
+                        <h4>📊 تقدمك في الكورس</h4>
+                        <div class="progress-info">
+                            <div class="progress-bar-mini">
+                                <div class="progress-fill-mini" style="width: 10%"></div>
+                            </div>
+                            <span class="progress-text">1 من 10 حلقات</span>
+                        </div>
+                        <a href="../course.html" class="btn btn-outline btn-sm">عرض كل الحلقات</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Episode Navigation Footer -->
+    <section class="episode-footer-nav">
+        <div class="container">
+            <div class="footer-nav-content">
+                <div class="prev-episode disabled">
+                    <span class="nav-label">الحلقة السابقة</span>
+                    <span class="nav-title">لا يوجد</span>
+                </div>
+                <a href="../course.html" class="all-episodes-btn">
+                    <span>📚</span>
+                    <span>كل الحلقات</span>
+                </a>
+                <a href="episode2.html" class="next-episode">
+                    <span class="nav-label">الحلقة التالية</span>
+                    <span class="nav-title">فك شفرة الـ D</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="../index.html" class="footer-logo">
+                        <span class="logo-icon">🎯</span>
+                        <span class="logo-text">DISC<span class="logo-highlight">Sales</span></span>
+                    </a>
+                    <p>كورس صوتي متكامل لإتقان البيع باستخدام نموذج DISC</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>الكورس</h4>
+                        <ul>
+                            <li><a href="../course.html">هيكل الكورس</a></li>
+                            <li><a href="episode1.html">الحلقة الأولى</a></li>
+                            <li><a href="../resources.html">الأدوات والموارد</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>للمديرين</h4>
+                        <ul>
+                            <li><a href="../implementation.html">دليل التطبيق</a></li>
+                            <li><a href="../implementation.html#rollout">جدول التنفيذ</a></li>
+                            <li><a href="../implementation.html#metrics">مقاييس النجاح</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>تفاعلي</h4>
+                        <ul>
+                            <li><a href="../quiz.html">اختبار الشخصية</a></li>
+                            <li><a href="../resources.html#simulator">محاكي العملاء</a></li>
+                            <li><a href="../resources.html#certificate">الشهادة</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 DISC Sales Mastery. مصمم بـ ❤️ للـ Learning & Development Team</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
