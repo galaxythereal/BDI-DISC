@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الحلقة 9: إغلاق الصفقة | DISC Sales Mastery</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">
+                <span class="logo-icon">🎯</span>
+                <span class="logo-text">DISC<span class="logo-highlight">Sales</span></span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="../index.html" class="nav-link">الرئيسية</a></li>
+                <li><a href="../course.html" class="nav-link active">الكورس</a></li>
+                <li><a href="../resources.html" class="nav-link">الأدوات</a></li>
+                <li><a href="../implementation.html" class="nav-link">دليل التطبيق</a></li>
+                <li><a href="../about.html" class="nav-link">عن الكورس</a></li>
+                <li><a href="../quiz.html" class="nav-link nav-cta">اكتشف شخصيتك</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Episode Header -->
+    <section class="episode-header episode-header-mixed">
+        <div class="container">
+            <div class="episode-nav-breadcrumb">
+                <a href="../course.html">الكورس</a>
+                <span class="separator">/</span>
+                <span>الحلقة 9</span>
+            </div>
+            <div class="episode-header-content">
+                <div class="episode-badge">
+                    <span class="episode-num">الحلقة 09</span>
+                    <span class="episode-duration">⏱️ 10 دقائق</span>
+                </div>
+                <h1>إغلاق الصفقة — تقنيات الـ Closing حسب الشخصية</h1>
+                <p class="episode-subtitle-large">Closing the Deal — DISC-Specific Closing Techniques</p>
+                <div class="episode-sape-indicators">
+                    <div class="sape-indicator" data-type="S">
+                        <span class="indicator-letter">S</span>
+                        <span class="indicator-text">قصص أول Closing ناجح</span>
+                    </div>
+                    <div class="sape-indicator" data-type="A">
+                        <span class="indicator-letter">A</span>
+                        <span class="indicator-text">4 طرق إغلاق لـ 4 أنماط</span>
+                    </div>
+                    <div class="sape-indicator" data-type="P">
+                        <span class="indicator-letter">P</span>
+                        <span class="indicator-text">لماذا Assumptive يفشل
+
+                          </span>
+                    </div>
+                    <div class="sape-indicator" data-type="E">
+                        <span class="indicator-letter">E</span>
+                        <span class="indicator-text">فرحة الإغلاق المتناسق</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Audio Player Section -->
+    <section class="audio-section">
+        <div class="container">
+            <div class="audio-player-card">
+                <div class="audio-visual">
+                    <div class="audio-artwork">
+                        <div class="artwork-bg"></div>
+                        <span class="artwork-number">09</span>
+                        <div class="sound-waves">
+                            <span class="wave"></span>
+                            <span class="wave"></span>
+                            <span class="wave"></span>
+                            <span class="wave"></span>
+                            <span class="wave"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="audio-controls">
+                    <div class="custom-audio-player">
+                        <button class="play-pause-btn" id="playPauseBtn" onclick="togglePlay()">
+                            <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M8 5v14l11-7z"/>
+                            </svg>
+                        </button>
+                        <div class="progress-container">
+                            <div class="time-display">
+                                <span id="currentTime">0:00</span>
+                                <span id="duration">10:00</span>
+                            </div>
+                            <div class="progress-bar" id="progressBar">
+                                <div class="progress-fill" id="progressFill"></div>
+                            </div>
+                        </div>
+                        <button class="speed-btn" onclick="changeSpeed()">
+                            <span id="speedDisplay">1x</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Episode Content -->
+    <section class="episode-content-section">
+        <div class="container">
+            <div class="content-grid">
+                <div class="main-content">
+                    <!-- Key Takeaways -->
+                    <div class="content-card takeaways-card">
+                        <div class="card-header">
+                            <span class="card-icon">🎯</span>
+                            <h3>النقاط الرئيسية</h3>
+                        </div>
+                        <div class="card-body">
+                            <ul class="takeaways-list">
+                                <li>
+                                    <span class="takeaway-icon">✓</span>
+                                    <span>الإغلاق الناجح يبدأ من فهم نمط العميل، ليس من تقنية واحدة للجميع</span>
+                                </li>
+                                <li>
+                                    <span class="takeaway-icon">✓</span>
+                                    <span>Assumptive Close يفشل مع S و C لأنهم يحتاجون وقت وتأكيد</span>
+                                </li>
+                                <li>
+                                    <span class="takeaway-icon">✓</span>
+                                    <span>لكل نمط طريقة إغلاق تناسبه وتجعله مرتاحاً</span>
+                                </li>
+                                <li>
+                                    <span class="takeaway-icon">✓</span>
+                                    <span>الإغلاق المتناسق يخلق عملاء راضين يرشحونك للآخرين</span>
+                                </li>
+                                <li>
+                                    <span class="takeaway-icon">✓</span>
+                                    <span>اقرأ إشارات الاستعداد للإغلاق حسب نمط العميل</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- 4 Closing Techniques -->
+                    <div class="content-card closing-card">
+                        <div class="card-header">
+                            <span class="card-icon">🤝</span>
+                            <h3>4 طرق إغلاق لـ 4 أنماط</h3>
+                        </div>
+                        <div class="card-body">
+                            <!-- D Closing -->
+                            <div class="closing-technique closing-d">
+                                <div class="technique-header">
+                                    <span class="type-badge type-d">D</span>
+                                    <h4>Direct Close — الإغلاق المباشر</h4>
+                                </div>
+                                <div class="technique-body">
+                                    <p class="technique-why"><strong>لماذا يعمل:</strong> D يحترم المباشرة ويكره إضاعة الوقت</p>
+                                    <div class="technique-script">
+                                        <span class="script-label">النص:</span>
+                                        <p>"بناءً على ما ناقشناه، هذا الحل سيحقق لك [النتيجة]. متى تريد أن نبدأ؟"</p>
+                                    </div>
+                                    <div class="technique-signals">
+                                        <span class="signals-label">إشارات الاستعداد:</span>
+                                        <ul>
+                                            <li>يسأل عن التفاصيل التنفيذية</li>
+                                            <li>يتحدث بصيغة "متى" بدلاً من "لو"</li>
+                                            <li>يبدو غير صبور للانتهاء</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- I Closing -->
+                            <div class="closing-technique closing-i">
+                                <div class="technique-header">
+                                    <span class="type-badge type-i">I</span>
+                                    <h4>Enthusiasm Close — إغلاق الحماس</h4>
+                                </div>
+                                <div class="technique-body">
+                                    <p class="technique-why"><strong>لماذا يعمل:</strong> I يتخذ قرارات عاطفية ويحب أن يكون جزءاً من شيء مميز</p>
+                                    <div class="technique-script">
+                                        <span class="script-label">النص:</span>
+                                        <p>"تخيل كيف سيكون شكل [الفائدة] بعد شهر من الآن! أنا متحمس أشتغل معاك على هذا. خلينا نبدأ؟"</p>
+                                    </div>
+                                    <div class="technique-signals">
+                                        <span class="signals-label">إشارات الاستعداد:</span>
+                                        <ul>
+                                            <li>يتحدث عن المستقبل بحماس</li>
+                                            <li>يشارك الفكرة مع آخرين أمامك</li>
+                                            <li>يسأل "متى يمكننا نبدأ؟"</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- S Closing -->
+                            <div class="closing-technique closing-s">
+                                <div class="technique-header">
+                                    <span class="type-badge type-s">S</span>
+                                    <h4>Assurance Close — إغلاق الطمأنة</h4>
+                                </div>
+                                <div class="technique-body">
+                                    <p class="technique-why"><strong>لماذا يعمل:</strong> S يحتاج الشعور بالأمان وأنه لن يندم</p>
+                                    <div class="technique-script">
+                                        <span class="script-label">النص:</span>
+                                        <p>"أفهم إنك تريد التأكد. لهذا لدينا [ضمان/فترة تجربة]. سنكون معك في كل خطوة. ما رأيك نبدأ بخطوة صغيرة؟"</p>
+                                    </div>
+                                    <div class="technique-signals">
+                                        <span class="signals-label">إشارات الاستعداد:</span>
+                                        <ul>
+                                            <li>يسأل عن الدعم والمتابعة</li>
+                                            <li>يذكر أنه تحدث مع فريقه</li>
+                                            <li>يبدو مرتاحاً وهادئاً</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- C Closing -->
+                            <div class="closing-technique closing-c">
+                                <div class="technique-header">
+                                    <span class="type-badge type-c">C</span>
+                                    <h4>Summary Close — إغلاق الملخص</h4>
+                                </div>
+                                <div class="technique-body">
+                                    <p class="technique-why"><strong>لماذا يعمل:</strong> C يحتاج رؤية الصورة الكاملة بشكل منطقي ومنظم</p>
+                                    <div class="technique-script">
+                                        <span class="script-label">النص:</span>
+                                        <p>"دعني ألخص: المواصفات [X]، السعر [Y]، الضمان [Z]، والتفاصيل التقنية كما ناقشنا. هل هناك أي معلومة إضافية تحتاجها قبل أن نمضي قدماً؟"</p>
+                                    </div>
+                                    <div class="technique-signals">
+                                        <span class="signals-label">إشارات الاستعداد:</span>
+                                        <ul>
+                                            <li>توقف عن طرح أسئلة جديدة</li>
+                                            <li>يراجع الأوراق أو الملفات</li>
+                                            <li>يسأل عن الخطوات التنفيذية</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Why Assumptive Fails -->
+                    <div class="content-card warning-card">
+                        <div class="card-header">
+                            <span class="card-icon">⚠️</span>
+                            <h3>لماذا الـ Assumptive Close يفشل مع S و C</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="warning-content">
+                                <div class="warning-example">
+                                    <h4>❌ الـ Assumptive Close:</h4>
+                                    <p class="bad-script">"ممتاز، هنجهز العقد ونبدأ الأسبوع الجاي!"</p>
+                                </div>
+                                <div class="warning-explanation">
+                                    <div class="explanation-item">
+                                        <span class="type-badge type-s">S</span>
+                                        <p><strong>رد فعل S:</strong> يشعر بالضغط والانزعاج، يتراجع، يقول "محتاج أفكر أكتر"</p>
+                                    </div>
+                                    <div class="explanation-item">
+                                        <span class="type-badge type-c">C</span>
+                                        <p><strong>رد فعل C:</strong> يشعر أنك تتجاوز أسئلته، يفقد الثقة، يطلب المزيد من الوقت</p>
+                                    </div>
+                                </div>
+                                <div class="warning-solution">
+                                    <h4>✅ البديل:</h4>
+                                    <p>مع S و C، دائماً اسأل وأكّد قبل أن تفترض. أعطهم الشعور بالسيطرة على القرار.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Quick Action -->
+                    <div class="content-card action-card">
+                        <div class="card-header">
+                            <span class="card-icon">⚡</span>
+                            <h3>التطبيق العملي</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="action-item">
+                                <h4>بناء مكتبة الإغلاق الخاصة بك:</h4>
+                                <div class="action-task">
+                                    <span class="task-number">1</span>
+                                    <div class="task-content">
+                                        <p>اكتب 2 جمل إغلاق مخصصة لكل نمط (8 جمل إجمالاً)</p>
+                                    </div>
+                                </div>
+                                <div class="action-task">
+                                    <span class="task-number">2</span>
+                                    <div class="task-content">
+                                        <p>تدرب على قولها بصوت عالٍ حتى تصبح طبيعية</p>
+                                    </div>
+                                </div>
+                                <div class="action-task">
+                                    <span class="task-number">3</span>
+                                    <div class="task-content">
+                                        <p>في صفقتك القادمة، حدد نمط العميل واستخدم الإغلاق المناسب</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Reflection -->
+                    <div class="content-card reflection-card">
+                        <div class="card-header">
+                            <span class="card-icon">💭</span>
+                            <h3>سؤال للتأمل</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="reflection-question">
+                                <p>"تذكر أفضل صفقة أغلقتها... كيف كان شعورك أنت والعميل بعد الإغلاق؟ هل كان هناك تناغم؟ الآن بعد فهمك لـ DISC، هل تعرف لماذا نجحت؟"</p>
+                            </div>
+                            <div class="reflection-space">
+                                <textarea placeholder="اكتب أفكارك هنا..." rows="4"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sidebar -->
+                <div class="sidebar">
+                    <div class="sidebar-card episode-nav-card">
+                        <h4>التنقل بين الحلقات</h4>
+                        <div class="episode-nav-buttons">
+                            <a href="episode8.html" class="nav-btn">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9 18l6-6-6-6"/>
+                                </svg>
+                                <span>الحلقة السابقة</span>
+                            </a>
+                            <a href="episode10.html" class="nav-btn">
+                                <span>الحلقة التالية</span>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M15 18l-6-6 6-6"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-card resources-card">
+                        <h4>📥 موارد هذه الحلقة</h4>
+                        <ul class="resources-list">
+                            <li>
+                                <a href="../downloads/closing-techniques.pdf" class="resource-link">
+                                    <span class="resource-icon">📄</span>
+                                    <span class="resource-name">تقنيات الإغلاق الأربعة</span>
+                                    <span class="resource-type">PDF</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../downloads/closing-scripts.pdf" class="resource-link">
+                                    <span class="resource-icon">🗣️</span>
+                                    <span class="resource-name">مكتبة جمل الإغلاق</span>
+                                    <span class="resource-type">PDF</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="sidebar-card alert-card">
+                        <div class="alert-icon">🎉</div>
+                        <h4>حلقة واحدة متبقية!</h4>
+                        <p>في الحلقة الأخيرة ستحصل على خطة الـ 30 يوم للتطبيق</p>
+                    </div>
+
+                    <div class="sidebar-card progress-card">
+                        <h4>📊 تقدمك في الكورس</h4>
+                        <div class="progress-info">
+                            <div class="progress-bar-mini">
+                                <div class="progress-fill-mini" style="width: 90%"></div>
+                            </div>
+                            <span class="progress-text">9 من 10 حلقات</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Episode Navigation Footer -->
+    <section class="episode-footer-nav">
+        <div class="container">
+            <div class="footer-nav-content">
+                <a href="episode8.html" class="prev-episode">
+                    <span class="nav-label">الحلقة السابقة</span>
+                    <span class="nav-title">التعامل مع الاعتراضات</span>
+                </a>
+                <a href="../course.html" class="all-episodes-btn">
+                    <span>📚</span>
+                    <span>كل الحلقات</span>
+                </a>
+                <a href="episode10.html" class="next-episode">
+                    <span class="nav-label">الحلقة الأخيرة</span>
+                    <span class="nav-title">خطة الـ 30 يوم</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>© 2024 DISC Sales Mastery. مصمم بـ ❤️ للـ Learning & Development Team</p>
+            </div>
+        </div>
+
+          </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
+    
