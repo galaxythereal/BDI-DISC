@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اكتشف نمطك DISC | DISC Sales Mastery</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="logo-icon">🎯</span>
+                <span class="logo-text">DISC<span class="logo-highlight">Sales</span></span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">الرئيسية</a></li>
+                <li><a href="course.html" class="nav-link">الكورس</a></li>
+                <li><a href="resources.html" class="nav-link">الأدوات</a></li>
+                <li><a href="implementation.html" class="nav-link">دليل التطبيق</a></li>
+                <li><a href="about.html" class="nav-link">عن الكورس</a></li>
+                <li><a href="quiz.html" class="nav-link nav-cta active">اكتشف شخصيتك</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Quiz Header -->
+    <section class="quiz-header">
+        <div class="container">
+            <div class="quiz-header-content">
+                <span class="page-tag">اختبار تفاعلي</span>
+                <h1>اكتشف نمط شخصيتك DISC</h1>
+                <p>أجب على 12 سؤال واكتشف نمطك السائد في البيع وكيف تتعامل مع العملاء</p>
+                <div class="quiz-info">
+                    <span class="info-item">⏱️ 3-5 دقائق</span>
+                    <span class="info-item">📝 12 سؤال</span>
+                    <span class="info-item">📊 نتائج فورية</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quiz Container -->
+    <section class="quiz-section">
+        <div class="container">
+            <div class="quiz-container" id="quizContainer">
+                <!-- Progress Bar -->
+                <div class="quiz-progress">
+                    <div class="progress-info">
+                        <span>السؤال <span id="currentQuestion">1</span> من 12</span>
+                        <span id="progressPercent">0%</span>
+                    </div>
+                    <div class="progress-bar-quiz">
+                        <div class="progress-fill-quiz" id="progressFillQuiz" style="width: 0%"></div>
+                    </div>
+                </div>
+
+                <!-- Quiz Questions -->
+                <div class="quiz-questions" id="quizQuestions">
+                    <!-- Question 1 -->
+                    <div class="quiz-question active" data-question="1">
+                        <h3>عندما تواجه تحدياً في العمل، ما أول شيء تفعله؟</h3>
+                        <div class="quiz-options">
+                            <label class="quiz-option-card">
+                                <input type="radio" name="q1" value="D">
+                                <div class="option-content">
+                                    <span class="option-letter">أ</span>
+                                    <p>أتخذ قراراً سريعاً وأبدأ التنفيذ فوراً</p>
+                                </div>
+                            </label>
+                            <label class="quiz-option-card">
+                                <input type="radio" name="q1" value="I">
+                                <div class="option-content">
+                                    <span class="option-letter">ب</span>
+                                    <p>أتحدث مع الآخرين وأشاركهم الفكرة للحصول على آرائهم</p>
+                                </div>
+                            </label>
+                            <label class="quiz-option-card">
+                                <input type="radio" name="q1" value="S">
+                                <div class="option-content">
+                                    <span class="option-letter">ج</span>
+                                    <p>أفكر بهدوء وأتأكد من فهم الموقف قبل أي خطوة</p>
+                                </div>
+                            </label>
+                            <label class="quiz-option-card">
+                                <input type="radio" name="q1" value="C">
+                                <div class="option-content">
+                                    <span class="option-letter">د</span>
+                                    <p>أجمع المعلومات والبيانات وأحلل الخيارات</p>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Question 2 -->
+                    <div class="quiz-question" data-question="2">
+                        <h3>في الاجتماعات، أنت عادةً:</h3>
+                        <div class="quiz-options">
+                            <label class="quiz-option-card">
+                                <input type="radio" name="q2" value="D">
+                                <div class="option-content">
+                                    <span class="option-letter">أ</span>
+                                    <p>أقود النقاش وأوجه الفريق نحو القرارات</p>
+                                </div>
+                            </label>
+                            <label class="quiz-option-card">
+                                <input type="radio" name="q2" value="I">
+                                <div class="option-content">
+                                    <span class="option-letter">ب</span>
+                                    <p>أشارك بحماس وأضيف طاقة إيجابية للنقاش</p>
+                                </div>
+                            </label>
+                            <label class="quiz-option-card">
+                                <input type="radio" name="q2" value="S">
+                                <div class="option-content">
+                                    <span class="option-letter">ج</span>
+                                    <p>أستمع بانتباه وأدعم أفكار الآخرين</p>
+                                </div>
+                            </label>
+                            <label class="quiz-option-card">
+                                <input type="radio" name="q2" value="C">
+                                <div class="option-content">
+                                    <span class="option-letter">د</span>
+                                    <p>أطرح أسئلة تفصيلية وأتأكد من دقة المعلومات</p>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Question 3 -->
+                    <div class="quiz-question" data-question="3">
+                        <h3>عند البيع لعميل جديد، ما الأهم بالنسبة لك؟</h3>
+                        <div class="quiz-options">
+                            <label class="quiz-option-card">
+                                <input type="radio" name="q3" value="D">
+                                <div class="option-content">
+                                    <span class="option-letter">أ</span>
+                                    <p>إغلاق الصفقة بسرعة وكفاءة</p>
+                                </div>
+                            </label>
+                            <label class="quiz-option-card">
+                                <input type="radio" name="q3" value="I">
+                                <div class="option-content">
+                                    <span class="option-letter">ب</span>
+                                    <p>بناء علاقة شخصية وجعله يحبني</p>
+                                </div>
+                            </label>
+                            <label class="quiz-option-card">
+                                <input type="radio" name="q3" value="S">
+                                <div class="option-content">
+                                    <span class="option-letter">ج</span>
+                                    <p>التأكد من راحته وثقته قبل أي شيء</p>
+                                </div>
+                            </label>
+                            <label class="quiz-option-card">
+                                <input type="radio" name="q3" value="C">
+                                <div class="option-content">
+                                    <span class="option-letter">د</span>
+                                    <p>تقديم كل المعلومات والتفاصيل التي يحتاجها</p>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Question 4 -->
+                    <div class="quiz-question" data-question="4">
+                        <h3>عندما يعترض العميل على السعر، ردة فعلك الأولى:</h3>
+                        <div class="quiz-options">
+                            <label class="quiz-option-card">
+                                <input type="radio" name="q4" value="D">
+                                <div class="option-content">
+                                    <span class="option-letter">أ</span>
+                                    <p>أركز على النتائج والقيمة التي سيحصل عليها</p>
+                                </div>
+                            </label>
+                            <label class="quiz-option-card">
+                                <input type="radio" name="q4" value="I">
+                                <div class="option-content">
+                                    <span class="option-letter">ب</span>
+                                    <p>أحكي له عن تجارب عملاء آخرين سعداء</p>
+                                </div>
+                            </label>
+                            <label class="quiz-option-card">
+                                <input type="radio" name="q4" value="S">
+                                <div class="option-content">
+                                    <span class="option-letter">ج</span>
+                                    <p>أطمئنه وأعرض خيارات مرنة تناسبه</p>
+                                </div>
+                            </label>
+                            <label class="quiz-option-card">
+                                <input type="radio" name="q4" value="C">
+                                <div class="option-content">
+                                    <span class="option-letter">د</span>
+                                    <p>أقدم تحليل مقارنة وأرقام توضح القيمة</p>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Question 5 -->
+                    <div class="quiz-question" data-question="5">
+                        <h3>في وقت فراغك، تفضل:</h3>
+                        <div class="quiz-options">
+                            <label class="quiz-option-card">
+                                <input type="radio" name="q5" value="D">
+                                <div class="option-content">
+                                    <span class="option-letter">أ</span>
+                                    <p>ممارسة رياضة تنافسية أو تحدي جديد</p>
+                                </div>
+                            </label>
+                            <label class="quiz-option-card">
+                                <input type="radio" name="q5" value="I">
+                                <div class="option-content">
+                                    <span class="option-letter">ب</span>
+                                    <p>قضاء الوقت مع الأصدقاء والعائلة</p>
+                                </div>
+                            </label>
+                            <label class="quiz-option-card">
+                                <input type="radio" name="q5" value="S">
+                                <div class="option-content">
+                                    <span class="option-letter">ج</span>
+                                    <p>الاسترخاء في المنزل أو نشاط هادئ</p>
+                                </div>
+                            </label>
+                            <label class="quiz-option-card">
+                                <input type="radio" name="q5" value="C">
+                                <div class="option-content">
+                                    <span class="option-letter">د</span>
+                                    <p>القراءة أو تعلم شيء جديد</p>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Question 6 -->
+                    <div class="quiz-question" data-question="6">
+                        <h3>عندما تحتاج اتخاذ قرار مهم:</h3>
+                        <div class="quiz-options">
+                            <label class="quiz-option-card">
+                                <input type="radio" name="q6" value="D">
+                                <div class="option-content">
+                                    <span class="option-letter">أ</span>
+                                    <p>أقرر بسرعة وأثق في حدسي</p>
+                                </div>
+                            </label>
+                            <label class="quiz-option-card">
+                                <input type="radio" name="q6" value="I">
+                                <div class="option-content">
+                                    <span class="option-letter">ب</span>
+                                    <p>أستشير الآخرين وأستمع لآرائهم</p>
+                                </div>
+                            </label>
+                            <label class="quiz-option-card">
+                                <input type="radio" name="q6" value="S">
+                                <div class="option-content">
+                                    <span class="option-letter">ج</span>
+                                    <p>آخذ وقتي وأفكر في التأثير على الجميع</p>
+                                </div>
+                            </label>
+                            <label class="quiz-option-card">
+                                <input type="radio" name="q6" value="C">
+                                <div class="option-content">
+                                    <span class="option-letter">د</span>
+                                    <p>أجمع كل المعلومات وأحلل البدائل</p>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Question 7 -->
+                    <div class="quiz-question" data-question="7">
+                        <h3>ما الذي يحفزك أكثر في العمل؟</h3>
+                        <div class="quiz-options">
+                            <label class="quiz-option-card">
+                                <input type="radio" name="q7" value="D">
+                                <div class="option-content">
+                                    <span class="option-letter">أ</span>
+                                    <p>تحقيق الأهداف والفوز بالتحديات</p>
+                                </div>
+                            </label>
+                            <label class="quiz-option-card">
+                                <input type="radio" name="q7" value="I">
+                                <div class="option-content">
+                                    <span class="option-letter">ب</span>
+                                    <p>التقدير والاعتراف من الآخرين</p>
+                                </div>
+                            </label>
+                            <label class="quiz-option-card">
+                                <input type="radio" name="q7" value="S">
+                                <div class="option-content">
+                                    <span class="option-letter">ج</span>
+                                    <p>بيئة عمل مستقرة وفريق متعاون</p>
+                                </div>
+                            </label>
+                            <label class="quiz-option-card">
+                                <input type="radio" name="q7" value="C">
+                                <div class="option-content">
+                                    <span class="option-letter">د</span>
+                                    <p>إتقان العمل وتقديم جودة عالية</p>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Question 8 -->
+                    <div class="quiz-question" data-question="8">
+                        <h3>كيف تصف طريقة تواصلك مع الآخرين؟</h3>
+                        <div class="quiz-options">
+                            <label class="quiz-option-card">
+                                <input type="radio" name="q8" value="D">
+                                <div class="option-content">
+                                    <span class="option-letter">أ</span>
+                                    <p>مباشر وواضح، أدخل في الموضوع فوراً</p>
+                                </div>
+                            </label>
+                            <label class="quiz-option-card">
+                                <input type="radio" name="q8" value="I">
+                                <div class="option-content">
+                                    <span class="option-letter">ب</span>
+                                    <p>ودود ومتحمس، أحب الحوار والتفاعل</p>
+                                </div>
+                            </label>
+                            <label class="quiz-option-card">
+                                <input type="radio" name="q8" value="S">
+                                <div class="option-content">
+                                    <span class="option-letter">ج</span>
+                                    <p>هادئ ومستمع، أفضل الاستماع على الكلام</p>
+                                </div>
+                            </label>
+                            <label class="quiz-option-card">
+                                <input type="radio" name="q8" value="C">
+                                <div class="option-content">
+                                    <span class="option-letter">د</span>
+                                    <p>دقيق ومنظم، أركز على الحقائق</p>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Question 9 -->
+                    <div class="quiz-question" data-question="9">
+                        <h3>عندما يختلف معك زميل في الرأي:</h3>
+                        <div class="quiz-options">
+                            <label class="quiz-option-card">
+                                <input type="radio" name="q9" value="D">
+                                <div class="option-content">
+                                    <span class="option-letter">أ</span>
+                                    <p>أدافع عن رأيي بقوة وأحاول إقناعه</p>
+                                </div>
+                            </label>
+                            <label class="quiz-option-card">
+                                <input type="radio" name="q9" value="I">
+                                <div class="option-content">
+                                    <span class="option-letter">ب</span>
+                                    <p>أحاول إيجاد أرضية مشتركة والحفاظ على العلاقة</p>
+                                </div>
+                            </label>
+                            <label class="quiz-option-card">
+                                <input type="radio" name="q9" value="S">
+                                <div class="option-content">
+                                    <span class="option-letter">ج</span>
+                                    <p>أتجنب الصراع وأحاول التوفيق</p>
+                                </div>
+                            </label>
+                            <label class="quiz-option-card">
+                                <input type="radio" name="q9" value="C">
+                                <div class="option-content">
+                                    <span class="option-letter">د</span>
+                                    <p>أطلب أدلة وأناقش بالمنطق والحقائق</p>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Question 10 -->
+                    <div class="quiz-question" data-question="10">
+                        <h3>في مشروع جديد، تفضل:</h3>
+                        <div class="quiz-options">
+                            <label class="quiz-option-card">
+                                <input type="radio" name="q10" value="D">
+                                <div class="option-content">
+                                    <span class="option-letter">أ</span>
+                                    <p>قيادة الفريق وتحديد الاتجاه</p>
+                                </div>
+                            </label>
+                            <label class="quiz-option-card">
+                                <input type="radio" name="q10" value="I">
+                                <div class="option-content">
+                                    <span class="option-letter">ب</span>
+                                    <p>تحفيز الفريق ونشر الحماس</p>
+                                </div>
+                            </label>
+                            <label class="quiz-option-card">
+                                <input type="radio" name="q10" value="S">
+                                <div class="option-content">
+                                    <span class="option-letter">ج</span>
+                                    <p>دعم الفريق وضمان تعاون الجميع</p>
+                                </div>
+                            </label>
+                            <label class="quiz-option-card">
+                                <input type="radio" name="q10" value="C">
+                                <div class="option-content">
+                                    <span class="option-letter">د</span>
+                                    <p>التخطيط التفصيلي وضمان الجودة</p>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Question 11 -->
+                    <div class="quiz-question" data-question="11">
+                        <h3>ما أكثر شيء يزعجك في العمل؟</h3>
+                        <div class="quiz-options">
+                            <label class="quiz-option-card">
+                                <input type="radio" name="q11" value="D">
+                                <div class="option-content">
+                                    <span class="option-letter">أ</span>
+                                    <p>البطء في اتخاذ القرارات وإضاعة الوقت</p>
+                                </div>
+                            </label>
+                            <label class="quiz-option-card">
+                                <input type="radio" name="q11" value="I">
+                                <div class="option-content">
+                                    <span class="option-letter">ب</span>
+                                    <p>العمل بمفردي وعدم التفاعل مع الآخرين</p>
+                                </div>
+                            </label>
+                            <label class="quiz-option-card">
+                                <input type="radio" name="q11" value="S">
+                                <div class="option-content">
+                                    <span class="option-letter">ج</span>
+                                    <p>التغييرات المفاجئة وعدم الاستقرار</p>
+                                </div>
+                            </label>
+                            <label class="quiz-option-card">
+                                <input type="radio" name="q11" value="C">
+                                <div class="option-content">
+                                    <span class="option-letter">د</span>
+                                    <p>العمل غير المنظم والأخطاء</p>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Question 12 -->
+                    <div class="quiz-question" data-question="12">
+                        <h3>بعد إتمام صفقة ناجحة، تشعر بالرضا أكثر عندما:</h3>
+                        <div class="quiz-options">
+                            <label class="quiz-option-card">
+                                <input type="radio" name="q12" value="D">
+                                <div class="option-content">
+                                    <span class="option-letter">أ</span>
+                                    <p>حققت الهدف وتجاوزت التوقعات</p>
+                                </div>
+                            </label>
+                            <label class="quiz-option-card">
+                                <input type="radio" name="q12" value="I">
+                                <div class="option-content">
+                                    <span class="option-letter">ب</span>
+                                    <p>بنيت علاقة جديدة والعميل يحبني</p>
+                                </div>
+                            </label>
+                            <label class="quiz-option-card">
+                                <input type="radio" name="q12" value="S">
+                                <div class="option-content">
+                                    <span class="option-letter">ج</span>
+                                    <p>العميل راضٍ ومرتاح تماماً</p>
+                                </div>
+                            </label>
+                            <label class="quiz-option-card">
+                                <input type="radio" name="q12" value="C">
+                                <div class="option-content">
+                                    <span class="option-letter">د</span>
+                                    <p>كل شيء سار بدقة كما خططت</p>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Navigation Buttons -->
+                <div class="quiz-navigation">
+                    <button class="btn btn-outline" id="prevBtn" onclick="prevQuestion()" disabled>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 18l6-6-6-6"/>
+                        </svg>
+                        السابق
+                    </button>
+                    <button class="btn btn-primary" id="nextBtn" onclick="nextQuestion()">
+                        التالي
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M15 18l-6-6 6-6"/>
+                        </svg>
+                    </button>
+                    <button class="btn btn-primary hidden" id="submitBtn" onclick="showResults()">
+                        اكتشف نتيجتك
+                        <span>🎯</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Results Section (Hidden Initially) -->
+            <div class="quiz-results hidden" id="quizResults">
+                <div class="results-header">
+                    <div class="results-icon" id="resultsIcon">🎯</div>
+                    <h2>نتيجتك: نمط <span id="resultType">D</span></h2>
+                    <p class="result-title" id="resultTitle">الشخصية القيادية</p>
+                </div>
+                
+                <div class="results-chart">
+                    <h3>توزيع نمطك</h3>
+                    <div class="chart-bars-horizontal">
+                        <div class="chart-bar-h">
+                            <span class="bar-label">D</span>
+                            <div class="bar-container">
+                                <div class="bar-fill bar-d" id="barD" style="width: 0%"></div>
+                            </div>
+                            <span class="bar-value" id="valueD">0%</span>
+                        </div>
+                        <div class="chart-bar-h">
+                            <span class="bar-label">I</span>
+                            <div class="bar-container">
+                                <div class="bar-fill bar-i" id="barI" style="width: 0%"></div>
+                            </div>
+                            <span class="bar-value" id="valueI">0%</span>
+                        </div>
+                        <div class="chart-bar-h">
+                            <span class="bar-label">S</span>
+                            <div class="bar-container">
+                                <div class="bar-fill bar-s" id="barS" style="width: 0%"></div>
+                            </div>
+                            <span class="bar-value" id="valueS">0%</span>
+                        </div>
+                        <div class="chart-bar-h">
+                            <span class="bar-label">C</span>
+                            <div class="bar-container">
+                                <div class="bar-fill bar-c" id="barC" style="width: 0%"></div>
+                            </div>
+                            <span class="bar-value" id="valueC">0%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="results-details">
+                    <div class="result-section">
+                        <h3>🎯 نقاط قوتك في البيع</h3>
+                        <ul id="strengthsList">
+                            <li>قوة 1</li>
+                            <li>قوة 2</li>
+                            <li>قوة 3</li>
+                        </ul>
+                    </div>
+                    <div class="result-section">
+                        <h3>⚠️ تحدياتك المحتملة</h3>
+                        <ul id="challengesList">
+                            <li>تحدي 1</li>
+                            <li>تحدي 2</li>
+                            <li>تحدي 3</li>
+                        </ul>
+                    </div>
+                    <div class="result-section">
+                        <h3>💡 نصائح للتطوير</h3>
+                        <ul id="tipsList">
+                            <li>نصيحة 1</li>
+                            <li>نصيحة 2</li>
+                            <li>نصيحة 3</li>
+                        </ul>
+                    </div>
+                    <div class="result-section">
+                        <h3>🤝 الأنماط التي قد تحتاج جهداً أكبر معها</h3>
+                        <p id="challengingTypes">سيتم تحديدها بناءً على نتيجتك</p>
+                    </div>
+                </div>
+
+                <div class="results-actions">
+                    <a href="course.html" class="btn btn-primary btn-lg">
+                        <span>📚</span>
+                        <span>ابدأ الكورس الآن</span>
+                    </a>
+                    <button class="btn btn-secondary btn-lg" onclick="retakeQuiz()">
+                        <span>🔄</span>
+                        <span>أعد الاختبار</span>
+                    </button>
+                    <button class="btn btn-outline btn-lg" onclick="shareResults()">
+                        <span>📤</span>
+                        <span>شارك نتيجتك</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">
+                        <span class="logo-icon">🎯</span>
+                        <span class="logo-text">DISC<span class="logo-highlight">Sales</span></span>
+                    </a>
+                    <p>كورس صوتي متكامل لإتقان البيع باستخدام نموذج DISC</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 DISC Sales Mastery. مصمم بـ ❤️ للـ Learning & Development Team</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
