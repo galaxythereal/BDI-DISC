@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الحلقة 5: إقناع الـ C | DISC Sales Mastery</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">
+                <span class="logo-icon">🎯</span>
+                <span class="logo-text">DISC<span class="logo-highlight">Sales</span></span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="../index.html" class="nav-link">الرئيسية</a></li>
+                <li><a href="../course.html" class="nav-link active">الكورس</a></li>
+                <li><a href="../resources.html" class="nav-link">الأدوات</a></li>
+                <li><a href="../implementation.html" class="nav-link">دليل التطبيق</a></li>
+                <li><a href="../about.html" class="nav-link">عن الكورس</a></li>
+                <li><a href="../quiz.html" class="nav-link nav-cta">اكتشف شخصيتك</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Episode Header -->
+    <section class="episode-header episode-header-c">
+        <div class="container">
+            <div class="episode-nav-breadcrumb">
+                <a href="../course.html">الكورس</a>
+                <span class="separator">/</span>
+                <span>الحلقة 5</span>
+            </div>
+            <div class="episode-header-content">
+                <div class="episode-badge">
+                    <span class="episode-num">الحلقة 05</span>
+                    <span class="episode-duration">⏱️ 10 دقائق</span>
+                </div>
+                <h1>إقناع الـ C — البيع للمحلل الدقيق</h1>
+                <p class="episode-subtitle-large">Convincing the C — Selling to the Careful Analyst</p>
+                <div class="disc-type-badge disc-c-badge">
+                    <span class="type-letter">C</span>
+                    <span class="type-name">Conscientiousness</span>
+                </div>
+                <div class="episode-sape-indicators">
+                    <div class="sape-indicator" data-type="S">
+                        <span class="indicator-letter">S</span>
+                        <span class="indicator-text">كسب C بالتحضير الجيد</span>
+                    </div>
+                    <div class="sape-indicator" data-type="A">
+                        <span class="indicator-letter">A</span>
+                        <span class="indicator-text">7 تكتيكات مبنية على البيانات</span>
+                    </div>
+                    <div class="sape-indicator" data-type="P">
+                        <span class="indicator-letter">P</span>
+                        <span class="indicator-text">تشريح اعتراض C</span>
+                    </div>
+                    <div class="sape-indicator" data-type="E">
+                        <span class="indicator-letter">E</span>
+                        <span class="indicator-text">احترام حاجته للدقة</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Audio Player Section -->
+    <section class="audio-section">
+        <div class="container">
+            <div class="audio-player-card audio-card-c">
+                <div class="audio-visual">
+                    <div class="audio-artwork">
+                        <div class="artwork-bg artwork-bg-c"></div>
+                        <span class="artwork-number">05</span>
+                        <div class="sound-waves">
+                            <span class="wave"></span>
+                            <span class="wave"></span>
+                            <span class="wave"></span>
+                            <span class="wave"></span>
+                            <span class="wave"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="audio-controls">
+                    <div class="audio-player-wrapper">
+                        <audio id="episode-audio" preload="metadata">
+                            <source src="../assets/audio/episode5.mp3" type="audio/mpeg">
+                        </audio>
+                        <div class="custom-audio-player">
+                            <button class="play-pause-btn" id="playPauseBtn" onclick="togglePlay()">
+                                <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M8 5v14l11-7z"/>
+                                </svg>
+                                <svg class="pause-icon hidden" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>
+                                </svg>
+                            </button>
+                            <div class="progress-container">
+                                <div class="time-display">
+                                    <span id="currentTime">0:00</span>
+                                    <span id="duration">10:00</span>
+                                </div>
+                                <div class="progress-bar" id="progressBar">
+                                    <div class="progress-fill" id="progressFill"></div>
+                                </div>
+                            </div>
+                            <button class="speed-btn" onclick="changeSpeed()">
+                                <span id="speedDisplay">1x</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Episode Content -->
+    <section class="episode-content-section">
+        <div class="container">
+            <div class="content-grid">
+                <div class="main-content">
+                    <!-- Key Takeaways -->
+                    <div class="content-card takeaways-card">
+                        <div class="card-header">
+                            <span class="card-icon">🎯</span>
+                            <h3>النقاط الرئيسية</h3>
+                        </div>
+                        <div class="card-body">
+                            <ul class="takeaways-list">
+                                <li>
+                                    <span class="takeaway-icon">✓</span>
+                                    <span>شخصية C هي الشخصية التحليلية: دقيقة، منظمة، تحب البيانات والتفاصيل</span>
+                                </li>
+                                <li>
+                                    <span class="takeaway-icon">✓</span>
+                                    <span>اعتراضات C ليست شخصية - هي جزء من عملية التحليل والتأكد</span>
+                                </li>
+                                <li>
+                                    <span class="takeaway-icon">✓</span>
+                                    <span>الـ 7 تكتيكات: البيانات، المقارنات، الدراسات، الأرقام، التفاصيل التقنية، الضمانات، المراجع</span>
+                                </li>
+                                <li>
+                                    <span class="takeaway-icon">✓</span>
+                                    <span>استراتيجية حزمة المعلومات: جهّز كل التفاصيل مسبقاً في ملف منظم</span>
+                                </li>
+                                <li>
+                                    <span class="takeaway-icon">✓</span>
+                                    <span>مع C: كن دقيقاً، لا تبالغ، أعطه وقت للتحليل، أجب على كل الأسئلة</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- C Profile Card -->
+                    <div class="content-card profile-card profile-card-c">
+                        <div class="card-header">
+                            <span class="card-icon">👤</span>
+                            <h3>ملف شخصية الـ C</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="profile-grid">
+                                <div class="profile-section">
+                                    <h4>✅ ما يحبه</h4>
+                                    <ul>
+                                        <li>البيانات والأرقام</li>
+                                        <li>التفاصيل الدقيقة</li>
+                                        <li>الجودة العالية</li>
+                                        <li>التنظيم والترتيب</li>
+                                        <li>المعايير الواضحة</li>
+                                    </ul>
+                                </div>
+                                <div class="profile-section">
+                                    <h4>❌ ما يكرهه</h4>
+                                    <ul>
+                                        <li>المبالغات والوعود الفارغة</li>
+                                        <li>عدم الدقة</li>
+                                        <li>القرارات المتسرعة</li>
+                                        <li>نقص المعلومات</li>
+                                        <li>الأخطاء والعشوائية</li>
+                                    </ul>
+                                </div>
+                                <div class="profile-section">
+                                    <h4>🗣️ طريقة كلامه</h4>
+                                    <ul>
+                                        <li>"ما الدليل على ذلك؟"</li>
+                                        <li>"هل يوجد دراسات؟"</li>
+                                        <li>"ما نسبة النجاح؟"</li>
+                                        <li>"أحتاج مراجعة التفاصيل"</li>
+                                        <li>"كيف تقارن بـ...؟"</li>
+                                    </ul>
+                                </div>
+                                <div class="profile-section">
+                                    <h4>🎯 كيف تبيع له</h4>
+                                    <ul>
+                                        <li>جهّز كل البيانات مسبقاً</li>
+                                        <li>كن دقيقاً ولا تبالغ</li>
+                                        <li>قدّم مقارنات موضوعية</li>
+                                        <li>أرسل المعلومات كتابياً</li>
+                                        <li>أجب على كل سؤال بالتفصيل</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 7 Tactics -->
+                    <div class="content-card tactics-card">
+                        <div class="card-header">
+                            <span class="card-icon">📊</span>
+                            <h3>الـ 7 تكتيكات للبيع لشخصية C</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="tactics-list">
+                                <div class="tactic-item">
+                                    <span class="tactic-number">1</span>
+                                    <div class="tactic-content">
+                                        <h4>البيانات الواقعية</h4>
+                                        <p>"بناءً على بيانات 500 عميل، متوسط التوفير هو 23%"</p>
+                                    </div>
+                                </div>
+                                <div class="tactic-item">
+                                    <span class="tactic-number">2</span>
+                                    <div class="tactic-content">
+                                        <h4>المقارنات الموضوعية</h4>
+                                        <p>"هذا جدول مقارنة بين حلنا و3 بدائل أخرى"</p>
+                                    </div>
+                                </div>
+                                <div class="tactic-item">
+                                    <span class="tactic-number">3</span>
+                                    <div class="tactic-content">
+                                        <h4>الدراسات والأبحاث</h4>
+                                        <p>"دراسة من جامعة X أثبتت أن..."</p>
+                                    </div>
+                                </div>
+                                <div class="tactic-item">
+                                    <span class="tactic-number">4</span>
+                                    <div class="tactic-content">
+                                        <h4>الأرقام المحددة</h4>
+                                        <p>"وفّر 47 ساعة شهرياً، ليس 'وقت كثير'"</p>
+                                    </div>
+                                </div>
+                                                    <div class="tactic-item">
+                                    <span class="tactic-number">5</span>
+                                    <div class="tactic-content">
+                                        <h4>التفاصيل التقنية</h4>
+                                        <p>"المواصفات التقنية الكاملة موجودة في هذا الملف"</p>
+                                    </div>
+                                </div>
+                                <div class="tactic-item">
+                                    <span class="tactic-number">6</span>
+                                    <div class="tactic-content">
+                                        <h4>الضمانات المكتوبة</h4>
+                                        <p>"لدينا ضمان استرداد كامل لمدة 30 يوم مكتوب في العقد"</p>
+                                    </div>
+                                </div>
+                                <div class="tactic-item">
+                                    <span class="tactic-number">7</span>
+                                    <div class="tactic-content">
+                                        <h4>المراجع الموثقة</h4>
+                                        <p>"يمكنك التواصل مع 3 عملاء حاليين للسؤال عن تجربتهم"</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Quick Action -->
+                    <div class="content-card action-card">
+                        <div class="card-header">
+                            <span class="card-icon">⚡</span>
+                            <h3>التطبيق العملي</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="action-item">
+                                <h4>قبل الحلقة القادمة، طبّق الآتي:</h4>
+                                <div class="action-task">
+                                    <span class="task-number">1</span>
+                                    <div class="task-content">
+                                        <p>جهّز "حزمة معلومات C" تحتوي على:</p>
+                                        <ul>
+                                            <li>ورقة مواصفات تقنية</li>
+                                            <li>جدول مقارنة مع المنافسين</li>
+                                            <li>3 دراسات حالة بالأرقام</li>
+                                            <li>قائمة الأسئلة الشائعة مع إجابات تفصيلية</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="action-task">
+                                    <span class="task-number">2</span>
+                                    <div class="task-content">
+                                        <p>راجع آخر عرض قدمته: هل كانت الأرقام دقيقة ومحددة أم تقريبية؟</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Reflection -->
+                    <div class="content-card reflection-card">
+                        <div class="card-header">
+                            <span class="card-icon">💭</span>
+                            <h3>سؤال للتأمل</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="reflection-question">
+                                <p>"هل سبق أن شعرت بالإحباط من عميل يسأل أسئلة كثيرة؟ كيف يمكن أن تتغير نظرتك الآن بعد فهم أن هذه طبيعته وليست هجوماً عليك؟"</p>
+                            </div>
+                            <div class="reflection-space">
+                                <textarea placeholder="اكتب أفكارك هنا..." rows="4"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sidebar -->
+                <div class="sidebar">
+                    <div class="sidebar-card episode-nav-card">
+                        <h4>التنقل بين الحلقات</h4>
+                        <div class="episode-nav-buttons">
+                            <a href="episode4.html" class="nav-btn">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9 18l6-6-6-6"/>
+                                </svg>
+                                <span>الحلقة السابقة</span>
+                            </a>
+                            <a href="episode6.html" class="nav-btn">
+                                <span>الحلقة التالية</span>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M15 18l-6-6 6-6"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-card resources-card">
+                        <h4>📥 موارد هذه الحلقة</h4>
+                        <ul class="resources-list">
+                            <li>
+                                <a href="../downloads/c-type-cheatsheet.pdf" class="resource-link">
+                                    <span class="resource-icon">📄</span>
+                                    <span class="resource-name">ورقة الغش لشخصية C</span>
+                                    <span class="resource-type">PDF</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../downloads/info-packet-template.pdf" class="resource-link">
+                                    <span class="resource-icon">📦</span>
+                                    <span class="resource-name">قالب حزمة المعلومات</span>
+                                    <span class="resource-type">PDF</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../downloads/comparison-table-template.pdf" class="resource-link">
+                                    <span class="resource-icon">📊</span>
+                                    <span class="resource-name">قالب جدول المقارنة</span>
+                                    <span class="resource-type">PDF</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="sidebar-card milestone-card">
+                        <div class="milestone-badge">🎉</div>
+                        <h4>تهانينا!</h4>
+                        <p>أكملت التعرف على الـ 4 أنماط الأساسية! الآن ستتعلم كيف تحددهم وتتكيف معهم.</p>
+                    </div>
+
+                    <div class="sidebar-card progress-card">
+                        <h4>📊 تقدمك في الكورس</h4>
+                        <div class="progress-info">
+                            <div class="progress-bar-mini">
+                                <div class="progress-fill-mini" style="width: 50%"></div>
+                            </div>
+                            <span class="progress-text">5 من 10 حلقات - نصف الطريق! 🎯</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Episode Navigation Footer -->
+    <section class="episode-footer-nav">
+        <div class="container">
+            <div class="footer-nav-content">
+                <a href="episode4.html" class="prev-episode">
+                    <span class="nav-label">الحلقة السابقة</span>
+                    <span class="nav-title">كسب ثقة الـ S</span>
+                </a>
+                <a href="../course.html" class="all-episodes-btn">
+                    <span>📚</span>
+                    <span>كل الحلقات</span>
+                </a>
+                <a href="episode6.html" class="next-episode">
+                    <span class="nav-label">الحلقة التالية</span>
+                    <span class="nav-title">قراءة الغرفة</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>© 2024 DISC Sales Mastery. مصمم بـ ❤️ للـ Learning & Development Team</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
