@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الحلقة 2: فك شفرة الـ D | DISC Sales Mastery</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">
+                <span class="logo-icon">🎯</span>
+                <span class="logo-text">DISC<span class="logo-highlight">Sales</span></span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="../index.html" class="nav-link">الرئيسية</a></li>
+                <li><a href="../course.html" class="nav-link active">الكورس</a></li>
+                <li><a href="../resources.html" class="nav-link">الأدوات</a></li>
+                <li><a href="../implementation.html" class="nav-link">دليل التطبيق</a></li>
+                <li><a href="../about.html" class="nav-link">عن الكورس</a></li>
+                <li><a href="../quiz.html" class="nav-link nav-cta">اكتشف شخصيتك</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Episode Header -->
+    <section class="episode-header episode-header-d">
+        <div class="container">
+            <div class="episode-nav-breadcrumb">
+                <a href="../course.html">الكورس</a>
+                <span class="separator">/</span>
+                <span>الحلقة 2</span>
+            </div>
+            <div class="episode-header-content">
+                <div class="episode-badge">
+                    <span class="episode-num">الحلقة 02</span>
+                    <span class="episode-duration">⏱️ 10 دقائق</span>
+                </div>
+                <h1>فك شفرة الـ D — البيع للقائد الحاسم</h1>
+                <p class="episode-subtitle-large">Decoding the D — Selling to the Decisive Driver</p>
+                <div class="disc-type-badge disc-d-badge">
+                    <span class="type-letter">D</span>
+                    <span class="type-name">Dominance</span>
+                </div>
+                <div class="episode-sape-indicators">
+                    <div class="sape-indicator" data-type="S">
+                        <span class="indicator-letter">S</span>
+                        <span class="indicator-text">قصة نجاح مع عميل D</span>
+                    </div>
+                    <div class="sape-indicator" data-type="A">
+                        <span class="indicator-letter">A</span>
+                        <span class="indicator-text">5 علامات لتحديد الـ D</span>
+                    </div>
+                    <div class="sape-indicator" data-type="P">
+                        <span class="indicator-letter">P</span>
+                        <span class="indicator-text">CEO سريع التحدث</span>
+                    </div>
+                    <div class="sape-indicator" data-type="E">
+                        <span class="indicator-letter">E</span>
+                        <span class="indicator-text">التغلب على الخوف منهم</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Audio Player Section -->
+    <section class="audio-section">
+        <div class="container">
+            <div class="audio-player-card audio-card-d">
+                <div class="audio-visual">
+                    <div class="audio-artwork">
+                        <div class="artwork-bg artwork-bg-d"></div>
+                        <span class="artwork-number">02</span>
+                        <div class="sound-waves">
+                            <span class="wave"></span>
+                            <span class="wave"></span>
+                            <span class="wave"></span>
+                            <span class="wave"></span>
+                            <span class="wave"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="audio-controls">
+                    <div class="audio-player-wrapper">
+                        <audio id="episode-audio" preload="metadata">
+                            <source src="../assets/audio/episode2.mp3" type="audio/mpeg">
+                            متصفحك لا يدعم تشغيل الصوت
+                        </audio>
+                        <div class="custom-audio-player">
+                            <button class="play-pause-btn" id="playPauseBtn" onclick="togglePlay()">
+                                <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M8 5v14l11-7z"/>
+                                </svg>
+                                <svg class="pause-icon hidden" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>
+                                </svg>
+                            </button>
+                            <div class="progress-container">
+                                <div class="time-display">
+                                    <span id="currentTime">0:00</span>
+                                    <span id="duration">10:00</span>
+                                </div>
+                                <div class="progress-bar" id="progressBar" onclick="seek(event)">
+                                    <div class="progress-fill" id="progressFill"></div>
+                                    <div class="progress-handle" id="progressHandle"></div>
+                                </div>
+                            </div>
+                            <div class="volume-control">
+                                <button class="volume-btn" onclick="toggleMute()">
+                                    <svg class="volume-icon" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/>
+                                    </svg>
+                                </button>
+                                <input type="range" class="volume-slider" id="volumeSlider" min="0" max="100" value="80" onchange="changeVolume(this.value)">
+                            </div>
+                            <button class="speed-btn" onclick="changeSpeed()">
+                                <span id="speedDisplay">1x</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="audio-actions">
+                        <button class="action-btn" onclick="skipTime(-10)">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 5V1L7 6l5 5V7c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6H4c0 4.42 3.58 8 8 8s8-3.58 8-8-3.58-8-8-8z"/>
+                            </svg>
+                            <span>-10s</span>
+                        </button>
+                        <button class="action-btn" onclick="skipTime(10)">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 5V1l5 5-5 5V7c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6h2c0 4.42-3.58 8-8 8s-8-3.58-8-8 3.58-8 8-8z"/>
+                            </svg>
+                            <span>+10s</span>
+                        </button>
+                        <button class="action-btn download-btn">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/>
+                            </svg>
+                            <span>تحميل</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Episode Content -->
+    <section class="episode-content-section">
+        <div class="container">
+            <div class="content-grid">
+                <!-- Main Content -->
+                <div class="main-content">
+                    <!-- Key Takeaways -->
+                    <div class="content-card takeaways-card">
+                        <div class="card-header">
+                            <span class="card-icon">🎯</span>
+                            <h3>النقاط الرئيسية</h3>
+                        </div>
+                        <div class="card-body">
+                            <ul class="takeaways-list">
+                                <li>
+                                    <span class="takeaway-icon">✓</span>
+                                    <span>شخصية D هي الشخصية القيادية: سريعة، حاسمة، تركز على النتائج</span>
+                                </li>
+                                <li>
+                                    <span class="takeaway-icon">✓</span>
+                                    <span>الـ 5 علامات: سرعة الكلام، قلة الـ small talk، أسئلة مباشرة، لغة جسد واثقة، التركيز على الوقت</span>
+                                </li>
+                                <li>
+                                    <span class="takeaway-icon">✓</span>
+                                    <span>مع D: ابدأ بالنتيجة، كن مختصراً، احترم وقته، أعطه خيارات، تحدث بثقة</span>
+                                </li>
+                                <li>
+                                    <span class="takeaway-icon">✓</span>
+                                    <span>تجنب: الـ small talk الطويل، التفاصيل الزائدة، التردد، الضعف في الموقف</span>
+                                </li>
+                                <li>
+                                    <span class="takeaway-icon">✓</span>
+                                    <span>هيكل الـ Pitch للـ D: النتيجة → الكيفية المختصرة → الخطوة التالية</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- D Profile Card -->
+                    <div class="content-card profile-card profile-card-d">
+                        <div class="card-header">
+                            <span class="card-icon">👤</span>
+                            <h3>ملف شخصية الـ D</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="profile-grid">
+                                <div class="profile-section">
+                                    <h4>✅ ما يحبه</h4>
+                                    <ul>
+                                        <li>النتائج السريعة</li>
+                                        <li>الكفاءة والفعالية</li>
+                                        <li>التحديات الجديدة</li>
+                                        <li>السيطرة على الموقف</li>
+                                        <li>الاختصار والوضوح</li>
+                                    </ul>
+                                </div>
+                                <div class="profile-section">
+                                    <h4>❌ ما يكرهه</h4>
+                                    <ul>
+                                        <li>إضاعة الوقت</li>
+                                        <li>الكلام الكثير بدون فائدة</li>
+                                        <li>التردد وعدم الحسم</li>
+                                        <li>التفاصيل غير الضرورية</li>
+                                        <li>فقدان السيطرة</li>
+                                    </ul>
+                                </div>
+                                <div class="profile-section">
+                                    <h4>🗣️ طريقة كلامه</h4>
+                                    <ul>
+                                        <li>"ما النتيجة؟"</li>
+                                        <li>"باختصار..."</li>
+                                        <li>"وقتي محدود"</li>
+                                        <li>"ما الخطوة التالية؟"</li>
+                                        <li>"هل هذا أفضل خيار؟"</li>
+                                    </ul>
+                                </div>
+                                <div class="profile-section">
+                                    <h4>🎯 كيف تبيع له</h4>
+                                    <ul>
+                                        <li>ابدأ بالـ Bottom Line</li>
+                                        <li>كن واثقاً ومباشراً</li>
+                                        <li>أعطه خيارات (2-3)</li>
+                                        <li>احترم وقته</li>
+                                        <li>تحدث عن النتائج والـ ROI</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Transcript -->
+                    <div class="content-card transcript-card">
+                        <div class="card-header">
+                            <span class="card-icon">📝</span>
+                            <h3>نص الحلقة</h3>
+                            <button class="expand-transcript-btn" onclick="toggleTranscript()">
+                                <span>عرض النص الكامل</span>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M6 9l6 6 6-6"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="card-body transcript-body">
+                            <div class="transcript-content" id="transcriptContent">
+                                <div class="transcript-section">
+                                    <span class="transcript-timestamp">0:00</span>
+                                    <p class="transcript-text"><strong>[INTRO MUSIC - 10 seconds]</strong></p>
+                                </div>
+                                <div class="transcript-section">
+                                    <span class="transcript-timestamp">0:10</span>
+                                    <p class="transcript-text">أهلاً بيك في الحلقة التانية من كورس DISC Sales Mastery. النهاردة هنتكلم عن أول personality type وهو الـ D - Dominance. الشخصية القيادية الحاسمة.</p>
+                                </div>
+                                <div class="transcript-section" data-sape="P">
+                                    <span class="transcript-timestamp">0:30</span>
+                                    <span class="transcript-sape-tag">للـ P - Practical</span>
+                                    <p class="transcript-text">خلينا نبدأ بـ profile حقيقي. تخيل معايا CEO شركة كبيرة، اسمه خالد. خالد لما بتدخل مكتبه، أول حاجة هتلاحظها إنه مش هيضيع وقت في الـ small talk. هيسألك على طول: "إيه اللي عندك؟" أو "ما النتيجة اللي هتحققها لي؟"</p>
+                                </div>
+                                <div class="transcript-section">
+                                    <span class="transcript-timestamp">1:00</span>
+                                                              </div>
+                        </div>
+                    </div>
+
+                    <!-- Quick Action -->
+                    <div class="content-card action-card">
+                        <div class="card-header">
+                            <span class="card-icon">⚡</span>
+                            <h3>التطبيق العملي</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="action-item">
+                                <h4>قبل الحلقة القادمة، طبّق الآتي:</h4>
+                                <div class="action-task">
+                                    <span class="task-number">1</span>
+                                    <div class="task-content">
+                                        <p>تدرّب على هيكل الـ Pitch للـ D:</p>
+                                        <div class="pitch-structure">
+                                            <div class="pitch-step">
+                                                <span class="step-num">1</span>
+                                                <span class="step-text">النتيجة: "هذا الحل سيوفر لك X% من التكلفة"</span>
+                                            </div>
+                                            <div class="pitch-step">
+                                                <span class="step-num">2</span>
+                                                <span class="step-text">الكيفية المختصرة: "في 3 خطوات بسيطة..."</span>
+                                            </div>
+                                            <div class="pitch-step">
+                                                <span class="step-num">3</span>
+                                                <span class="step-text">الخطوة التالية: "متى نبدأ؟"</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="action-task">
+                                    <span class="task-number">2</span>
+                                    <div class="task-content">
+                                        <p>فكّر في عميل تعرفه من نوع D - كيف ستتعامل معه بشكل مختلف الآن؟</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Reflection Question -->
+                    <div class="content-card reflection-card">
+                        <div class="card-header">
+                            <span class="card-icon">💭</span>
+                            <h3>سؤال للتأمل</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="reflection-question">
+                                <p>"هل سبق وشعرت بالخوف أو التوتر عند التعامل مع شخص قيادي وحاسم؟ كيف يمكن أن يتغير شعورك الآن بعد فهم شخصيته؟"</p>
+                            </div>
+                            <div class="reflection-space">
+                                <textarea placeholder="اكتب أفكارك هنا..." rows="4"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sidebar -->
+                <div class="sidebar">
+                    <!-- Episode Navigation -->
+                    <div class="sidebar-card episode-nav-card">
+                        <h4>التنقل بين الحلقات</h4>
+                        <div class="episode-nav-buttons">
+                            <a href="episode1.html" class="nav-btn">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9 18l6-6-6-6"/>
+                                </svg>
+                                <span>الحلقة السابقة</span>
+                            </a>
+                            <a href="episode3.html" class="nav-btn">
+                                <span>الحلقة التالية</span>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M15 18l-6-6 6-6"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Resources -->
+                    <div class="sidebar-card resources-card">
+                        <h4>📥 موارد هذه الحلقة</h4>
+                        <ul class="resources-list">
+                            <li>
+                                <a href="../downloads/d-type-cheatsheet.pdf" class="resource-link">
+                                    <span class="resource-icon">📄</span>
+                                    <span class="resource-name">ورقة الغش لشخصية D</span>
+                                    <span class="resource-type">PDF</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../downloads/d-pitch-template.pdf" class="resource-link">
+                                    <span class="resource-icon">📝</span>
+                                    <span class="resource-name">قالب Pitch للـ D</span>
+                                    <span class="resource-type">PDF</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../downloads/d-scripts.pdf" class="resource-link">
+                                    <span class="resource-icon">🗣️</span>
+                                    <span class="resource-name">نصوص محادثة مع D</span>
+                                    <span class="resource-type">PDF</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Quick Quiz -->
+                    <div class="sidebar-card quiz-card">
+                        <h4>🧠 اختبر فهمك</h4>
+                        <div class="mini-quiz">
+                            <p class="quiz-question">ما أول شيء يجب أن تقوله لعميل من نوع D؟</p>
+                            <div class="quiz-options">
+                                <label class="quiz-option">
+                                    <input type="radio" name="q1" value="a">
+                                    <span>كيف حالك اليوم؟</span>
+                                </label>
+                                <label class="quiz-option correct">
+                                    <input type="radio" name="q1" value="b">
+                                    <span>النتيجة التي ستحصل عليها</span>
+                                </label>
+                                <label class="quiz-option">
+                                    <input type="radio" name="q1" value="c">
+                                    <span>تفاصيل المنتج كاملة</span>
+                                </label>
+                                <label class="quiz-option">
+                                    <input type="radio" name="q1" value="d">
+                                    <span>قصة نجاح طويلة</span>
+                                </label>
+                            </div>
+                            <button class="btn btn-secondary btn-sm check-answer-btn" onclick="checkAnswer()">تحقق من إجابتك</button>
+                        </div>
+                    </div>
+
+                    <!-- Progress -->
+                    <div class="sidebar-card progress-card">
+                        <h4>📊 تقدمك في الكورس</h4>
+                        <div class="progress-info">
+                            <div class="progress-bar-mini">
+                                <div class="progress-fill-mini" style="width: 20%"></div>
+                            </div>
+                            <span class="progress-text">2 من 10 حلقات</span>
+                        </div>
+                        <a href="../course.html" class="btn btn-outline btn-sm">عرض كل الحلقات</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Episode Navigation Footer -->
+    <section class="episode-footer-nav">
+        <div class="container">
+            <div class="footer-nav-content">
+                <a href="episode1.html" class="prev-episode">
+                    <span class="nav-label">الحلقة السابقة</span>
+                    <span class="nav-title">ليه أحسن Pitch بتاعك بيفشل؟</span>
+                </a>
+                <a href="../course.html" class="all-episodes-btn">
+                    <span>📚</span>
+                    <span>كل الحلقات</span>
+                </a>
+                <a href="episode3.html" class="next-episode">
+                    <span class="nav-label">الحلقة التالية</span>
+                    <span class="nav-title">كسب الـ I</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="../index.html" class="footer-logo">
+                        <span class="logo-icon">🎯</span>
+                        <span class="logo-text">DISC<span class="logo-highlight">Sales</span></span>
+                    </a>
+                    <p>كورس صوتي متكامل لإتقان البيع باستخدام نموذج DISC</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 DISC Sales Mastery. مصمم بـ ❤️ للـ Learning & Development Team</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
