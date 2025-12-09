@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;1000;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation -->
@@ -104,12 +104,11 @@
     <!-- Audio Player Section -->
     <section class="audio-section">
         <div class="container">
-            <div class="audio-player-card audio-card-final">
+            <div class="audio-player-card audio-card-c">
                 <div class="audio-visual">
-                    <div class="audio-artwork artwork-final">
-                        <div class="artwork-bg artwork-bg-final"></div>
+                    <div class="audio-artwork">
+                        <div class="artwork-bg artwork-bg-c"></div>
                         <span class="artwork-number">10</span>
-                        <span class="artwork-trophy">🏆</span>
                         <div class="sound-waves">
                             <span class="wave"></span>
                             <span class="wave"></span>
@@ -120,24 +119,32 @@
                     </div>
                 </div>
                 <div class="audio-controls">
-                    <div class="custom-audio-player">
-                        <button class="play-pause-btn" id="playPauseBtn" onclick="togglePlay()">
-                            <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M8 5v14l11-7z"/>
-                            </svg>
-                        </button>
-                        <div class="progress-container">
-                            <div class="time-display">
-                                <span id="currentTime">0:00</span>
-                                <span id="duration">9:00</span>
+                    <div class="audio-player-wrapper">
+                        <audio id="episode-audio" preload="metadata">
+                            <source src="../assets/audio/episode10.mp3" type="audio/mpeg">
+                        </audio>
+                        <div class="custom-audio-player">
+                            <button class="play-pause-btn" id="playPauseBtn" onclick="togglePlay()">
+                                <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M8 10v14l11-7z"/>
+                                </svg>
+                                <svg class="pause-icon hidden" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M6 19h4V10H6v14zm8-14v14h4V10h-4z"/>
+                                </svg>
+                            </button>
+                            <div class="progress-container">
+                                <div class="time-display">
+                                    <span id="currentTime">0:00</span>
+                                    <span id="duration">10:00</span>
+                                </div>
+                                <div class="progress-bar" id="progressBar">
+                                    <div class="progress-fill" id="progressFill"></div>
+                                </div>
                             </div>
-                            <div class="progress-bar" id="progressBar">
-                                <div class="progress-fill" id="progressFill"></div>
-                            </div>
+                            <button class="speed-btn" onclick="changeSpeed()">
+                                <span id="speedDisplay">1x</span>
+                            </button>
                         </div>
-                        <button class="speed-btn" onclick="changeSpeed()">
-                            <span id="speedDisplay">1x</span>
-                        </button>
                     </div>
                 </div>
             </div>
@@ -198,21 +205,21 @@
                                     <div class="day-item">
                                         <span class="day-num">1-2</span>
                                         <div class="day-task">
-                                            <h5>راجع ملفات الأنماط الأربعة</h5>
+                                            <h10>راجع ملفات الأنماط الأربعة</h10>
                                             <p>اقرأ ورقة الغش لكل نمط مرة واحدة على الأقل</p>
                                         </div>
                                     </div>
                                     <div class="day-item">
                                         <span class="day-num">3-4</span>
                                         <div class="day-task">
-                                            <h5>لاحظ 5 أشخاص</h5>
-                                            <p>في حياتك اليومية، حاول تحديد نمط 5 أشخاص (زملاء، أصدقاء، عائلة)</p>
+                                            <h10>لاحظ 10 أشخاص</h10>
+                                            <p>في حياتك اليومية، حاول تحديد نمط 10 أشخاص (زملاء، أصدقاء، عائلة)</p>
                                         </div>
                                     </div>
                                     <div class="day-item">
-                                        <span class="day-num">5-7</span>
+                                        <span class="day-num">10-7</span>
                                         <div class="day-task">
-                                            <h5>طبّق الـ 3 أسئلة الكاشفة</h5>
+                                            <h10>طبّق الـ 3 أسئلة الكاشفة</h10>
                                             <p>في كل محادثة مع عميل، استخدم الأسئلة الثلاثة</p>
                                         </div>
                                     </div>
@@ -229,28 +236,28 @@
                                     <div class="day-item">
                                         <span class="day-num">8-9</span>
                                         <div class="day-task">
-                                            <h5>تكيّف مع نمط D</h5>
+                                            <h10>تكيّف مع نمط D</h10>
                                             <p>في أي محادثة مع D، طبّق: مباشرة + نتائج + سرعة</p>
                                         </div>
                                     </div>
                                     <div class="day-item">
                                         <span class="day-num">10-11</span>
                                         <div class="day-task">
-                                            <h5>تكيّف مع نمط I</h5>
+                                            <h10>تكيّف مع نمط I</h10>
                                             <p>مع I: قصص + حماس + علاقة شخصية</p>
                                         </div>
                                     </div>
                                     <div class="day-item">
                                         <span class="day-num">12-13</span>
                                         <div class="day-task">
-                                            <h5>تكيّف مع نمط S</h5>
+                                            <h10>تكيّف مع نمط S</h10>
                                             <p>مع S: صبر + طمأنة + بدون ضغط</p>
                                         </div>
                                     </div>
                                     <div class="day-item">
                                         <span class="day-num">14</span>
                                         <div class="day-task">
-                                            <h5>تكيّف مع نمط C</h5>
+                                            <h10>تكيّف مع نمط C</h10>
                                             <p>مع C: بيانات + دقة + تفاصيل</p>
                                         </div>
                                     </div>
@@ -265,23 +272,23 @@
                                 </div>
                                 <div class="week-days">
                                     <div class="day-item">
-                                        <span class="day-num">15-17</span>
+                                        <span class="day-num">110-17</span>
                                         <div class="day-task">
-                                            <h5>تدرب على الاعتراضات</h5>
+                                            <h10>تدرب على الاعتراضات</h10>
                                             <p>Role-play يومي مع زميل: اعتراض واحد × 4 أنماط</p>
                                         </div>
                                     </div>
                                     <div class="day-item">
                                         <span class="day-num">18-20</span>
                                         <div class="day-task">
-                                            <h5>تدرب على الإغلاق</h5>
+                                            <h10>تدرب على الإغلاق</h10>
                                             <p>استخدم تقنية الإغلاق المناسبة حسب النمط في كل صفقة</p>
                                         </div>
                                     </div>
                                     <div class="day-item">
                                         <span class="day-num">21</span>
                                         <div class="day-task">
-                                            <h5>مراجعة منتصف الطريق</h5>
+                                            <h10>مراجعة منتصف الطريق</h10>
                                             <p>راجع ملاحظاتك، ما الذي يعمل؟ ما الذي يحتاج تحسين؟</p>
                                         </div>
                                     </div>
@@ -296,23 +303,23 @@
                                 </div>
                                 <div class="week-days">
                                     <div class="day-item">
-                                        <span class="day-num">22-25</span>
+                                        <span class="day-num">22-210</span>
                                         <div class="day-task">
-                                            <h5>التكامل الكامل</h5>
+                                            <h10>التكامل الكامل</h10>
                                             <p>طبّق الدورة الكاملة: تحديد → تكيف → اعتراضات → إغلاق</p>
                                         </div>
                                     </div>
                                     <div class="day-item">
                                         <span class="day-num">26-28</span>
                                         <div class="day-task">
-                                            <h5>تحدي النمط الصعب</h5>
+                                            <h10>تحدي النمط الصعب</h10>
                                             <p>ركّز على النمط الأصعب بالنسبة لك - تدرب عليه يومياً</p>
                                         </div>
                                     </div>
                                     <div class="day-item">
                                         <span class="day-num">29-30</span>
                                         <div class="day-task">
-                                            <h5>المراجعة والاحتفال</h5>
+                                            <h10>المراجعة والاحتفال</h10>
                                             <p>راجع إنجازاتك، احتفل، وخطط للشهر القادم</p>
                                         </div>
                                     </div>
@@ -329,7 +336,7 @@
                         </div>
                         <div class="card-body">
                             <div class="accountability-intro">
-                                <p>الدراسات تثبت: وجود شريك محاسبة يزيد احتمالية تحقيق الأهداف بـ 65%!</p>
+                                <p>الدراسات تثبت: وجود شريك محاسبة يزيد احتمالية تحقيق الأهداف بـ 610%!</p>
                             </div>
                             <div class="accountability-steps">
                                 <div class="acc-step">
@@ -343,7 +350,7 @@
                                     <span class="acc-step-num">2</span>
                                     <div class="acc-step-content">
                                         <h4>حددوا موعد أسبوعي</h4>
-                                        <p>15 دقيقة كل أسبوع لمراجعة التقدم</p>
+                                        <p>110 دقيقة كل أسبوع لمراجعة التقدم</p>
                                     </div>
                                 </div>
                                 <div class="acc-step">
@@ -376,7 +383,7 @@
                             </div>
                             <div class="points-list">
                                 <div class="points-item">
-                                    <span class="points-value">+5</span>
+                                    <span class="points-value">+10</span>
                                     <span class="points-action">حددت نمط عميل بشكل صحيح</span>
                                 </div>
                                 <div class="points-item">
@@ -384,7 +391,7 @@
                                     <span class="points-action">كيّفت أسلوبك حسب النمط</span>
                                 </div>
                                 <div class="points-item">
-                                    <span class="points-value">+15</span>
+                                    <span class="points-value">+110</span>
                                     <span class="points-action">رددت على اعتراض بطريقة مناسبة للنمط</span>
                                 </div>
                                 <div class="points-item">
@@ -392,7 +399,7 @@
                                     <span class="points-action">أغلقت صفقة باستخدام التقنية المناسبة</span>
                                 </div>
                                 <div class="points-item">
-                                    <span class="points-value">+25</span>
+                                    <span class="points-value">+210</span>
                                     <span class="points-action">طبّقت الدورة الكاملة مع عميل واحد</span>
                                 </div>
                             </div>
@@ -401,7 +408,7 @@
                                 <div class="target-levels">
                                     <div class="target-level">
                                         <span class="target-badge bronze">🥉</span>
-                                        <span class="target-points">500 نقطة</span>
+                                        <span class="target-points">1000 نقطة</span>
                                         <span class="target-title">مبتدئ DISC</span>
                                     </div>
                                     <div class="target-level">
@@ -471,7 +478,7 @@
                             <a href="../course.html" class="nav-btn">
                                 <span>كل الحلقات</span>
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M15 18l-6-6 6-6"/>
+                                    <path d="M110 18l-6-6 6-6"/>
                                 </svg>
                             </a>
                         </div>

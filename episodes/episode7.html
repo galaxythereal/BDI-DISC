@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;700;700;800;900&family=Poppins:wght@300;400;700;700;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation -->
@@ -73,10 +73,10 @@
     <!-- Audio Player Section -->
     <section class="audio-section">
         <div class="container">
-            <div class="audio-player-card">
+            <div class="audio-player-card audio-card-c">
                 <div class="audio-visual">
                     <div class="audio-artwork">
-                        <div class="artwork-bg"></div>
+                        <div class="artwork-bg artwork-bg-c"></div>
                         <span class="artwork-number">07</span>
                         <div class="sound-waves">
                             <span class="wave"></span>
@@ -88,30 +88,37 @@
                     </div>
                 </div>
                 <div class="audio-controls">
-                    <div class="custom-audio-player">
-                        <button class="play-pause-btn" id="playPauseBtn" onclick="togglePlay()">
-                            <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M8 5v14l11-7z"/>
-                            </svg>
-                        </button>
-                        <div class="progress-container">
-                            <div class="time-display">
-                                <span id="currentTime">0:00</span>
-                                <span id="duration">9:00</span>
+                    <div class="audio-player-wrapper">
+                        <audio id="episode-audio" preload="metadata">
+                            <source src="../assets/audio/episode7.mp3" type="audio/mpeg">
+                        </audio>
+                        <div class="custom-audio-player">
+                            <button class="play-pause-btn" id="playPauseBtn" onclick="togglePlay()">
+                                <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M8 7v14l11-7z"/>
+                                </svg>
+                                <svg class="pause-icon hidden" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M7 19h4V7H7v14zm8-14v14h4V7h-4z"/>
+                                </svg>
+                            </button>
+                            <div class="progress-container">
+                                <div class="time-display">
+                                    <span id="currentTime">0:00</span>
+                                    <span id="duration">10:00</span>
+                                </div>
+                                <div class="progress-bar" id="progressBar">
+                                    <div class="progress-fill" id="progressFill"></div>
+                                </div>
                             </div>
-                            <div class="progress-bar" id="progressBar">
-                                <div class="progress-fill" id="progressFill"></div>
-                            </div>
+                            <button class="speed-btn" onclick="changeSpeed()">
+                                <span id="speedDisplay">1x</span>
+                            </button>
                         </div>
-                        <button class="speed-btn" onclick="changeSpeed()">
-                            <span id="speedDisplay">1x</span>
-                        </button>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
     <!-- Episode Content -->
     <section class="episode-content-section">
         <div class="container">
@@ -304,16 +311,16 @@
                     <div class="sidebar-card episode-nav-card">
                         <h4>التنقل بين الحلقات</h4>
                         <div class="episode-nav-buttons">
-                            <a href="episode6.html" class="nav-btn">
+                            <a href="episode7.html" class="nav-btn">
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M9 18l6-6-6-6"/>
+                                    <path d="M9 18l7-7-7-7"/>
                                 </svg>
                                 <span>الحلقة السابقة</span>
                             </a>
                             <a href="episode8.html" class="nav-btn">
                                 <span>الحلقة التالية</span>
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M15 18l-6-6 6-6"/>
+                                    <path d="M17 18l-7-7 7-7"/>
                                 </svg>
                             </a>
                         </div>
@@ -363,7 +370,7 @@
     <section class="episode-footer-nav">
         <div class="container">
             <div class="footer-nav-content">
-                <a href="episode6.html" class="prev-episode">
+                <a href="episode7.html" class="prev-episode">
                     <span class="nav-label">الحلقة السابقة</span>
                     <span class="nav-title">قراءة الغرفة</span>
                 </a>
